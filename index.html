@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast-Delivered Apps for Forward-Thinking Companies</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Introduction -->
+        <section class="slide intro">
+            <div class="language-selector">
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="en">English (EN)</option>
+                    <option value="es">Español (ES)</option>
+                    <option value="pt">Português (BR)</option>
+                </select>
+            </div>
+            <h1 id="headline">Fast-Delivered Apps for Forward-Thinking Companies</h1>
+            <p id="subheadline">Empowering Your Business with Cutting-Edge Technology</p>
+        </section>
+
+        <!-- Slide 2: Our Approach -->
+        <section class="slide approach">
+            <h2 id="approach-title">Our Approach: The Double Diamond</h2>
+            <img src="https://aguayo-co.s3.amazonaws.com/public/images/Double_Diamond_Aguayo.width-490.png" alt="Double Diamond Approach">
+            <p id="approach-description">Continuous Discovery & Continuous Delivery</p>
+        </section>
+
+        <!-- Slide 3: Our Differentiators -->
+        <section class="slide differentiators">
+            <h2 id="differentiators-title">Why Choose Us?</h2>
+            <div class="reasons" id="reasons">
+                <!-- Reasons will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Slide 4: Our Process -->
+        <section class="slide process">
+            <h2 id="process-title">Our Process: Iterative Excellence</h2>
+            <div class="process-steps" id="process-steps">
+                <!-- Process steps will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Slide 5: Call to Action -->
+        <section class="slide cta">
+            <h2 id="cta-title">Ready to Transform Your Business?</h2>
+            <p id="cta-description">Let's build your success story together</p>
+            <button onclick="showForm()" id="get-started-btn">Get Started</button>
+            <form id="contact-form" style="display: none;">
+                <label for="email" id="email-label">Email address</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" id="submit-btn">Schedule a Chat</button>
+                <p id="form-description">Enter your email and we'll get in touch to schedule a quick chat about your needs.</p>
+            </form>
+        </section>
+    </div>
+
+    <div id="dialog" class="dialog" style="display: none;">
+        <div class="dialog-content">
+            <h3 id="dialog-title"></h3>
+            <p id="dialog-description"></p>
+            <button onclick="closeDialog()" id="close-dialog-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
