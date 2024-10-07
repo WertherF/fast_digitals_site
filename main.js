@@ -16,22 +16,18 @@ const translations = {
         close: "Close",
         reasons: [
             {
-                icon: "👥",
                 text: "Customer-Centered Approach",
                 description: "We prioritize our customers' needs and feedback, ensuring that our solutions are tailored to their specific requirements and continuously evolve to meet their changing needs."
             },
             {
-                icon: "⚡",
                 text: "Expert Solutions",
                 description: "Our team of seasoned professionals brings years of experience and cutting-edge knowledge to deliver top-tier, innovative solutions that stand out in the market."
             },
             {
-                icon: "✨",
                 text: "Simplicity in Complexity",
                 description: "We excel at distilling complex problems into user-friendly solutions, focusing on intuitive interfaces and streamlined processes that enhance efficiency and user satisfaction."
             },
             {
-                icon: "🎧",
                 text: "Continuous Support",
                 description: "Our commitment doesn't end at delivery. We provide ongoing support, regular updates, and proactive improvements to ensure your solution remains effective and up-to-date."
             }
@@ -55,22 +51,18 @@ const translations = {
         close: "Cerrar",
         reasons: [
             {
-                icon: "👥",
                 text: "Enfoque Centrado en el Cliente",
                 description: "Priorizamos las necesidades y comentarios de nuestros clientes, asegurando que nuestras soluciones estén adaptadas a sus requisitos específicos y evolucionen continuamente para satisfacer sus necesidades cambiantes."
             },
             {
-                icon: "⚡",
                 text: "Soluciones Expertas",
                 description: "Nuestro equipo de profesionales experimentados aporta años de experiencia y conocimientos de vanguardia para ofrecer soluciones innovadoras de primer nivel que destacan en el mercado."
             },
             {
-                icon: "✨",
                 text: "Simplicidad en la Complejidad",
                 description: "Nos destacamos en simplificar problemas complejos en soluciones fáciles de usar, centrándonos en interfaces intuitivas y procesos optimizados que mejoran la eficiencia y la satisfacción del usuario."
             },
             {
-                icon: "🎧",
                 text: "Soporte Continuo",
                 description: "Nuestro compromiso no termina con la entrega. Proporcionamos soporte continuo, actualizaciones regulares y mejoras proactivas para garantizar que su solución siga siendo efectiva y actualizada."
             }
@@ -94,22 +86,18 @@ const translations = {
         close: "Fechar",
         reasons: [
             {
-                icon: "👥",
                 text: "Abordagem Centrada no Cliente",
                 description: "Priorizamos as necessidades e feedback de nossos clientes, garantindo que nossas soluções sejam adaptadas aos seus requisitos específicos e evoluam continuamente para atender às suas necessidades em constante mudança."
             },
             {
-                icon: "⚡",
                 text: "Soluções Especializadas",
                 description: "Nossa equipe de profissionais experientes traz anos de experiência e conhecimento de ponta para oferecer soluções inovadoras de alto nível que se destacam no mercado."
             },
             {
-                icon: "✨",
                 text: "Simplicidade na Complexidade",
                 description: "Nós nos destacamos em simplificar problemas complexos em soluções fáceis de usar, focando em interfaces intuitivas e processos otimizados que aumentam a eficiência e a satisfação do usuário."
             },
             {
-                icon: "🎧",
                 text: "Suporte Contínuo",
                 description: "Nosso compromisso não termina na entrega. Fornecemos suporte contínuo, atualizações regulares e melhorias proativas para garantir que sua solução permaneça eficaz e atualizada."
             }
@@ -153,7 +141,7 @@ function updateReasons() {
         const button = document.createElement('button');
         button.className = 'reason';
         button.onclick = () => showDialog(reason.text, reason.description);
-        button.innerHTML = `<span class="icon">${reason.icon}</span>${reason.text}`;
+        button.textContent = reason.text;
         reasonsContainer.appendChild(button);
     });
 }
