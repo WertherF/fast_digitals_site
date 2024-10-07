@@ -108,9 +108,25 @@ const translations = {
 
 let currentLanguage = 'en';
 
-function changeLanguage() {
-    currentLanguage = document.getElementById('language-select').value;
+function changeLanguage(lang) {
+    currentLanguage = lang;
     updateContent();
+    document.getElementById('language-btn').textContent = `${getLanguageName(lang)} (${lang.toUpperCase()})`;
+    toggleLanguageMenu();
+}
+
+function getLanguageName(lang) {
+    switch (lang) {
+        case 'en': return 'English';
+        case 'es': return 'Español';
+        case 'pt': return 'Português';
+        default: return 'English';
+    }
+}
+
+function toggleLanguageMenu() {
+    const menu = document.getElementById('language-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
 
 function updateContent() {
@@ -181,6 +197,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     console.log('Email submitted:', email);
     alert('Thank you! We will get in touch soon.');
     this.reset();
+});
+
+// Close language menu when clicking outside
+document.addEventListener('click', function(event) {
+    const languageSelector = document.querySelector('.language-selector');
+    const languageMenu = document.getElementById('language-menu');
+    if (!languageSelector.contains(event.target)) {
+        languageMenu.style.display = 'none';
+    }
 });
 
 // Initialize content
