@@ -22,12 +22,31 @@ body {
     scroll-snap-align: start;
     padding: 2rem;
     box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .intro {
-    background: linear-gradient(to right, #e6f2ff, #f0f0f0);
-    color: #1a365d;
-    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+    color: #ffffff;
+}
+
+.approach {
+    background-image: url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+}
+
+.differentiators {
+    background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+}
+
+.process {
+    background-image: url('https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+}
+
+.cta {
+    background-image: url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+    color: #ffffff;
 }
 
 .language-selector {
@@ -44,33 +63,22 @@ body {
     font-size: 1rem;
 }
 
-.approach {
-    background-color: #ffffff;
-}
-
-.differentiators {
-    background: linear-gradient(to right, #f0f0f0, #e6f2ff);
-}
-
-.process {
-    background-color: #ffffff;
-}
-
-.cta {
-    background: linear-gradient(to right, #1a365d, #2c5282);
-    color: #ffffff;
+h1, h2 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #333;
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 p {
@@ -78,6 +86,9 @@ p {
     margin-bottom: 1rem;
     text-align: center;
     max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .reasons {
@@ -90,7 +101,7 @@ p {
 }
 
 .reason {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #e2e8f0;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -99,16 +110,11 @@ p {
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .reason:hover {
-    background-color: #e6f2ff;
-}
-
-.icon {
-    margin-right: 0.5rem;
-    font-size: 1.5rem;
+    background-color: rgba(230, 242, 255, 0.9);
 }
 
 .process-steps {
@@ -124,6 +130,9 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .step-number {
@@ -162,11 +171,14 @@ button:hover {
     align-items: center;
     width: 100%;
     max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
 
 #contact-form label {
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #333;
 }
 
 #contact-form input {
@@ -203,6 +215,12 @@ button:hover {
 
 .dialog-content button {
     margin-top: 1rem;
+}
+
+.double-diamond-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
