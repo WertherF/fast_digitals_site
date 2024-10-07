@@ -231,10 +231,10 @@ button:hover {
 
 .dialog-content {
     background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    max-width: 500px;
-    width: 90%;
+    padding: 2 rem;
+    border-radius: 0.5 rem;
+    max-width: 500 px;
+    width: 90 %;
 }
 
 .dialog-content h3 {
@@ -242,18 +242,18 @@ button:hover {
 }
 
 .dialog-content button {
-    margin-top: 1rem;
+    margin-top: 1 rem;
 }
 
 .double-diamond-img {
-    max-width: 100%;
+    max-width: 100 %;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1 rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768 px) {
     .reasons {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1 fr;
     }
 
     .process-steps {
@@ -262,6 +262,6 @@ button:hover {
     }
 
     .step {
-        margin-bottom: 2rem;
+        margin-bottom: 2 rem;
     }
 }
