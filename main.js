@@ -1,214 +1,131 @@
-const translations = {
+// Language data
+const languages = {
     en: {
         headline: "Fast-Delivered Apps for Forward-Thinking Companies",
         subheadline: "Empowering Your Business with Cutting-Edge Technology",
-        approach: "Our Approach: The Double Diamond",
-        continuousDiscovery: "Continuous Discovery & Continuous Delivery",
-        whyChooseUs: "Why Choose Us?",
-        ourProcess: "Our Process: Iterative Excellence",
-        readyToTransform: "Ready to Transform Your Business?",
-        buildSuccessStory: "Let's build your success story together",
-        getStarted: "Get Started",
+        approachTitle: "Our Approach: The Double Diamond",
+        approachDescription: "Continuous Discovery & Continuous Delivery",
+        processTitle: "Our Process: Iterative Excellence",
+        differentiatorTitle: "Why Choose Us?",
+        ctaTitle: "Ready to Transform Your Business?",
+        ctaDescription: "Let's build your success story together",
+        getStartedBtn: "Get Started",
         emailLabel: "Email address",
-        emailPlaceholder: "you@example.com",
-        scheduleChat: "Schedule a Chat",
-        formDescription: "Enter your email and we'll get in touch to schedule a quick chat about your needs.",
-        close: "Close",
-        reasons: [
-            {
-                text: "Customer-Centered Approach",
-                description: "We prioritize our customers' needs and feedback, ensuring that our solutions are tailored to their specific requirements and continuously evolve to meet their changing needs."
-            },
-            {
-                text: "Expert Solutions",
-                description: "Our team of seasoned professionals brings years of experience and cutting-edge knowledge to deliver top-tier, innovative solutions that stand out in the market."
-            },
-            {
-                text: "Simplicity in Complexity",
-                description: "We excel at distilling complex problems into user-friendly solutions, focusing on intuitive interfaces and streamlined processes that enhance efficiency and user satisfaction."
-            },
-            {
-                text: "Continuous Support",
-                description: "Our commitment doesn't end at delivery. We provide ongoing support, regular updates, and proactive improvements to ensure your solution remains effective and up-to-date."
-            }
-        ],
-        processSteps: ["Fast Delivery", "User Feedback", "Continuous Improvement", "Business Growth"]
-    },
-    es: {
-        headline: "Aplicaciones de Entrega Rápida para Empresas Visionarias",
-        subheadline: "Potenciando su Negocio con Tecnología de Vanguardia",
-        approach: "Nuestro Enfoque: El Doble Diamante",
-        continuousDiscovery: "Descubrimiento Continuo y Entrega Continua",
-        whyChooseUs: "¿Por Qué Elegirnos?",
-        ourProcess: "Nuestro Proceso: Excelencia Iterativa",
-        readyToTransform: "¿Listo para Transformar su Negocio?",
-        buildSuccessStory: "Construyamos juntos su historia de éxito",
-        getStarted: "Comenzar",
-        emailLabel: "Dirección de correo electrónico",
-        emailPlaceholder: "usted@ejemplo.com",
-        scheduleChat: "Programar una Charla",
-        formDescription: "Ingrese su correo electrónico y nos pondremos en contacto para programar una breve charla sobre sus necesidades.",
-        close: "Cerrar",
-        reasons: [
-            {
-                text: "Enfoque Centrado en el Cliente",
-                description: "Priorizamos las necesidades y comentarios de nuestros clientes, asegurando que nuestras soluciones estén adaptadas a sus requisitos específicos y evolucionen continuamente para satisfacer sus necesidades cambiantes."
-            },
-            {
-                text: "Soluciones Expertas",
-                description: "Nuestro equipo de profesionales experimentados aporta años de experiencia y conocimientos de vanguardia para ofrecer soluciones innovadoras de primer nivel que destacan en el mercado."
-            },
-            {
-                text: "Simplicidad en la Complejidad",
-                description: "Nos destacamos en simplificar problemas complejos en soluciones fáciles de usar, centrándonos en interfaces intuitivas y procesos optimizados que mejoran la eficiencia y la satisfacción del usuario."
-            },
-            {
-                text: "Soporte Continuo",
-                description: "Nuestro compromiso no termina con la entrega. Proporcionamos soporte continuo, actualizaciones regulares y mejoras proactivas para garantizar que su solución siga siendo efectiva y actualizada."
-            }
-        ],
-        processSteps: ["Entrega Rápida", "Retroalimentación del Usuario", "Mejora Continua", "Crecimiento del Negocio"]
+        submitBtn: "Schedule a Chat",
+        formDescription: "Enter your email and we'll get in touch to schedule a quick chat about your needs."
     },
     pt: {
-        headline: "Aplicativos de Entrega Rápida para Empresas Inovadoras",
-        subheadline: "Capacitando seu Negócio com Tecnologia de Ponta",
-        approach: "Nossa Abordagem: O Diamante Duplo",
-        continuousDiscovery: "Descoberta Contínua e Entrega Contínua",
-        whyChooseUs: "Por Que Nos Escolher?",
-        ourProcess: "Nosso Processo: Excelência Iterativa",
-        readyToTransform: "Pronto para Transformar seu Negócio?",
-        buildSuccessStory: "Vamos construir sua história de sucesso juntos",
-        getStarted: "Começar",
+        headline: "Aplicativos Rápidos para Empresas Inovadoras",
+        subheadline: "Potencializando Seu Negócio com Tecnologia de Ponta",
+        approachTitle: "Nossa Abordagem: O Diamante Duplo",
+        approachDescription: "Descoberta Contínua & Entrega Contínua",
+        processTitle: "Nosso Processo: Excelência Iterativa",
+        differentiatorTitle: "Por Que Nos Escolher?",
+        ctaTitle: "Pronto para Transformar Seu Negócio?",
+        ctaDescription: "Vamos construir sua história de sucesso juntos",
+        getStartedBtn: "Começar",
         emailLabel: "Endereço de e-mail",
-        emailPlaceholder: "voce@exemplo.com",
-        scheduleChat: "Agendar um Bate-papo",
-        formDescription: "Digite seu e-mail e entraremos em contato para agendar uma rápida conversa sobre suas necessidades.",
-        close: "Fechar",
-        reasons: [
-            {
-                text: "Abordagem Centrada no Cliente",
-                description: "Priorizamos as necessidades e feedback de nossos clientes, garantindo que nossas soluções sejam adaptadas aos seus requisitos específicos e evoluam continuamente para atender às suas necessidades em constante mudança."
-            },
-            {
-                text: "Soluções Especializadas",
-                description: "Nossa equipe de profissionais experientes traz anos de experiência e conhecimento de ponta para oferecer soluções inovadoras de alto nível que se destacam no mercado."
-            },
-            {
-                text: "Simplicidade na Complexidade",
-                description: "Nós nos destacamos em simplificar problemas complexos em soluções fáceis de usar, focando em interfaces intuitivas e processos otimizados que aumentam a eficiência e a satisfação do usuário."
-            },
-            {
-                text: "Suporte Contínuo",
-                description: "Nosso compromisso não termina na entrega. Fornecemos suporte contínuo, atualizações regulares e melhorias proativas para garantir que sua solução permaneça eficaz e atualizada."
-            }
-        ],
-        processSteps: ["Entrega Rápida", "Feedback do Usuário", "Melhoria Contínua", "Crescimento do Negócio"]
+        submitBtn: "Agendar um Bate-Papo",
+        formDescription: "Digite seu e-mail e entraremos em contato para agendar uma rápida conversa sobre suas necessidades."
+    },
+    es: {
+        headline: "Aplicaciones Rápidas para Empresas Innovadoras",
+        subheadline: "Potenciando Tu Negocio con Tecnología de Vanguardia",
+        approachTitle: "Nuestro Enfoque: El Doble Diamante",
+        approachDescription: "Descubrimiento Continuo & Entrega Continua",
+        processTitle: "Nuestro Proceso: Excelencia Iterativa",
+        differentiatorTitle: "¿Por Qué Elegirnos?",
+        ctaTitle: "¿Listo para Transformar Tu Negocio?",
+        ctaDescription: "Construyamos juntos tu historia de éxito",
+        getStartedBtn: "Empezar",
+        emailLabel: "Dirección de correo electrónico",
+        submitBtn: "Programar una Charla",
+        formDescription: "Ingresa tu correo electrónico y nos pondremos en contacto para programar una breve charla sobre tus necesidades."
     }
 };
 
-let currentLanguage = 'en';
+// Process steps data
+const processSteps = [
+    { icon: "fas fa-lightbulb", title: "Ideate", description: "Brainstorm innovative solutions" },
+    { icon: "fas fa-pencil-alt", title: "Design", description: "Create user-centric interfaces" },
+    { icon: "fas fa-code", title: "Develop", description: "Build robust and scalable applications" },
+    { icon: "fas fa-rocket", title: "Launch", description: "Deploy and monitor your solution" }
+];
 
+// Reasons to choose us data
+const reasons = [
+    { icon: "fas fa-bolt", title: "Lightning Fast Delivery", description: "We prioritize speed without compromising quality." },
+    { icon: "fas fa-users", title: "Expert Team", description: "Our seasoned professionals bring years of industry experience." },
+    { icon: "fas fa-cog", title: "Cutting-edge Technology", description: "We leverage the latest tools and frameworks for optimal results." },
+    { icon: "fas fa-handshake", title: "Client-Centric Approach", description: "Your success is our top priority, and we tailor our solutions to your unique needs." }
+];
+
+// Initialize the page
+function initPage() {
+    changeLanguage('en');
+    renderProcessSteps();
+    renderReasons();
+}
+
+// Change language
 function changeLanguage(lang) {
-    currentLanguage = lang;
-    updateContent();
-    document.getElementById('language-btn').textContent = `${getLanguageName(lang)} (${lang.toUpperCase()})`;
-    toggleLanguageMenu();
+    const data = languages[lang];
+    document.getElementById('headline').textContent = data.headline;
+    document.getElementById('subheadline').textContent = data.subheadline;
+    document.getElementById('approach-title').textContent = data.approachTitle;
+    document.getElementById('approach-description').textContent = data.approachDescription;
+    document.getElementById('process-title').textContent = data.processTitle;
+    document.getElementById('differentiators-title').textContent = data.differentiatorTitle;
+    document.getElementById('cta-title').textContent = data.ctaTitle;
+    document.getElementById('cta-description').textContent = data.ctaDescription;
+    document.getElementById('get-started-btn').textContent = data.getStartedBtn;
+    document.getElementById('email-label').textContent = data.emailLabel;
+    document.getElementById('submit-btn').textContent = data.submitBtn;
+    document.getElementById('form-description').textContent = data.formDescription;
+
+    // Update active state for language buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
 }
 
-function getLanguageName(lang) {
-    switch (lang) {
-        case 'en': return 'English';
-        case 'es': return 'Español';
-        case 'pt': return 'Português';
-        default: return 'English';
-    }
+// Render process steps
+function renderProcessSteps() {
+    const processStepsContainer = document.getElementById('process-steps');
+    processStepsContainer.innerHTML = processSteps.map(step => `
+        <div class="process-step">
+            <i class="${step.icon}"></i>
+            <h3>${step.title}</h3>
+            <p>${step.description}</p>
+        </div>
+    `).join('');
 }
 
-function toggleLanguageMenu() {
-    const menu = document.getElementById('language-menu');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-}
-
-function updateContent() {
-    const t = translations[currentLanguage];
-    document.getElementById('headline').textContent = t.headline;
-    document.getElementById('subheadline').textContent = t.subheadline;
-    document.getElementById('approach-title').textContent = t.approach;
-    document.getElementById('approach-description').textContent = t.continuousDiscovery;
-    document.getElementById('differentiators-title').textContent = t.whyChooseUs;
-    document.getElementById('process-title').textContent = t.ourProcess;
-    document.getElementById('cta-title').textContent = t.readyToTransform;
-    document.getElementById('cta-description').textContent = t.buildSuccessStory;
-    document.getElementById('get-started-btn').textContent = t.getStarted;
-    document.getElementById('email-label').textContent = t.emailLabel;
-    document.getElementById('email').placeholder = t.emailPlaceholder;
-    document.getElementById('submit-btn').textContent = t.scheduleChat;
-    document.getElementById('form-description').textContent = t.formDescription;
-    document.getElementById('close-dialog-btn').textContent = t.close;
-
-    updateReasons();
-    updateProcessSteps();
-}
-
-function updateReasons() {
+// Render reasons to choose us
+function renderReasons() {
     const reasonsContainer = document.getElementById('reasons');
-    reasonsContainer.innerHTML = '';
-    translations[currentLanguage].reasons.forEach(reason => {
-        const button = document.createElement('button');
-        button.className = 'reason';
-        button.onclick = () => showDialog(reason.text, reason.description);
-        button.textContent = reason.text;
-        reasonsContainer.appendChild(button);
-    });
+    reasonsContainer.innerHTML = reasons.map(reason => `
+        <div class="reason-item" onclick="toggleReason(this)">
+            <i class="${reason.icon} reason-icon"></i>
+            <div class="reason-text">
+                <h3>${reason.title}</h3>
+                <div class="reason-details">${reason.description}</div>
+            </div>
+            <i class="fas fa-chevron-right reason-arrow"></i>
+        </div>
+    `).join('');
 }
 
-function updateProcessSteps() {
-    const stepsContainer = document.getElementById('process-steps');
-    stepsContainer.innerHTML = '';
-    translations[currentLanguage].processSteps.forEach((step, index) => {
-        const div = document.createElement('div');
-        div.className = 'step';
-        div.innerHTML = `
-            <div class="step-number">${index + 1}</div>
-            <p>${step}</p>
-        `;
-        stepsContainer.appendChild(div);
-    });
+// Toggle reason details
+function toggleReason(element) {
+    element.classList.toggle('expanded');
 }
 
-function showDialog(title, description) {
-    document.getElementById('dialog-title').textContent = title;
-    document.getElementById('dialog-description').textContent = description;
-    document.getElementById('dialog').style.display = 'flex';
-}
-
-function closeDialog() {
-    document.getElementById('dialog').style.display = 'none';
-}
-
+// Show contact form
 function showForm() {
-    const form = document.getElementById('contact-form');
-    form.style.display = form.style.display === 'none' ? 'flex' : 'none';
+    document.getElementById('get-started-btn').style.display = 'none';
+    document.getElementById('contact-form').style.display = 'block';
 }
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const email = document.getElementById('email').value;
-    console.log('Email submitted:', email);
-    alert('Thank you! We will get in touch soon.');
-    this.reset();
-});
-
-// Close language menu when clicking outside
-document.addEventListener('click', function(event) {
-    const languageSelector = document.querySelector('.language-selector');
-    const languageMenu = document.getElementById('language-menu');
-    if (!languageSelector.contains(event.target)) {
-        languageMenu.style.display = 'none';
-    }
-});
-
-// Initialize content
-document.addEventListener('DOMContentLoaded', function() {
-    updateContent();
-});
+// Initialize the page when the DOM is loaded
+document.addEventListener('DOMContentLoaded', initPage);
