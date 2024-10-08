@@ -45,26 +45,52 @@ const languages = {
 };
 
 // Process steps data
-const processSteps = [
-    { icon: "fas fa-lightbulb", title: "Ideate", description: "Brainstorm innovative solutions" },
-    { icon: "fas fa-pencil-alt", title: "Design", description: "Create user-centric interfaces" },
-    { icon: "fas fa-code", title: "Develop", description: "Build robust and scalable applications" },
-    { icon: "fas fa-rocket", title: "Launch", description: "Deploy and monitor your solution" }
-];
+const processSteps = {
+    en: [
+        { icon: "fas fa-lightbulb", title: "Ideate", description: "Brainstorm innovative solutions" },
+        { icon: "fas fa-pencil-alt", title: "Design", description: "Create user-centric interfaces" },
+        { icon: "fas fa-code", title: "Develop", description: "Build robust and scalable applications" },
+        { icon: "fas fa-rocket", title: "Launch", description: "Deploy and monitor your solution" }
+    ],
+    pt: [
+        { icon: "fas fa-lightbulb", title: "Idealizar", description: "Criar soluções inovadoras" },
+        { icon: "fas fa-pencil-alt", title: "Projetar", description: "Criar interfaces centradas no usuário" },
+        { icon: "fas fa-code", title: "Desenvolver", description: "Construir aplicações robustas e escaláveis" },
+        { icon: "fas fa-rocket", title: "Lançar", description: "Implantar e monitorar sua solução" }
+    ],
+    es: [
+        { icon: "fas fa-lightbulb", title: "Idear", description: "Generar soluciones innovadoras" },
+        { icon: "fas fa-pencil-alt", title: "Diseñar", description: "Crear interfaces centradas en el usuario" },
+        { icon: "fas fa-code", title: "Desarrollar", description: "Construir aplicaciones robustas y escalables" },
+        { icon: "fas fa-rocket", title: "Lanzar", description: "Implementar y monitorear tu solución" }
+    ]
+};
 
 // Reasons to choose us data
-const reasons = [
-    { icon: "fas fa-bolt", title: "Lightning Fast Delivery", description: "We prioritize speed without compromising quality." },
-    { icon: "fas fa-users", title: "Expert Team", description: "Our seasoned professionals bring years of industry experience." },
-    { icon: "fas fa-cog", title: "Cutting-edge Technology", description: "We leverage the latest tools and frameworks for optimal results." },
-    { icon: "fas fa-handshake", title: "Client-Centric Approach", description: "Your success is our top priority, and we tailor our solutions to your unique needs." }
-];
+const reasons = {
+    en: [
+        { icon: "fas fa-bolt", title: "Lightning Fast Delivery", description: "We prioritize speed without compromising quality." },
+        { icon: "fas fa-users", title: "Expert Team", description: "Our seasoned professionals bring years of industry experience." },
+        { icon: "fas fa-cog", title: "Cutting-edge Technology", description: "We leverage the latest tools and frameworks for optimal results." },
+        { icon: "fas fa-handshake", title: "Client-Centric Approach", description: "Your success is our top priority, and we tailor our solutions to your unique needs." }
+    ],
+    pt: [
+        { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos a velocidade sem comprometer a qualidade." },
+        { icon: "fas fa-users", title: "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no  setor." },
+        { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as ferramentas e estruturas mais recentes para resultados ideais." },
+        { icon: "fas fa-handshake", title: "Abordagem Centrada no Cliente", description: "Seu sucesso é nossa prioridade máxima, e adaptamos nossas soluções às suas necessidades únicas." }
+    ],
+    es: [
+        { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos la velocidad sin comprometer la calidad." },
+        { icon: "fas fa-users", title: "Equipo Experto", description: "Nuestros profesionales experimentados aportan años de experiencia en la industria." },
+        { icon: "fas fa-cog", title: "Tecnología de Vanguardia", description: "Aprovechamos las últimas herramientas y marcos para obtener resultados óptimos." },
+        { icon: "fas fa-handshake", title: "Enfoque Centrado en el Cliente", description: "Tu éxito es nuestra máxima prioridad, y adaptamos nuestras soluciones a tus necesidades únicas." }
+    ]
+};
 
 // Initialize the page
 function initPage() {
     changeLanguage('en');
-    renderProcessSteps();
-    renderReasons();
 }
 
 // Change language
@@ -83,16 +109,19 @@ function changeLanguage(lang) {
     document.getElementById('submit-btn').textContent = data.submitBtn;
     document.getElementById('form-description').textContent = data.formDescription;
 
+    renderProcessSteps(lang);
+    renderReasons(lang);
+
     // Update active state for language buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang.toUpperCase());
     });
 }
 
 // Render process steps
-function renderProcessSteps() {
+function renderProcessSteps(lang) {
     const processStepsContainer = document.getElementById('process-steps');
-    processStepsContainer.innerHTML = processSteps.map(step => `
+    processStepsContainer.innerHTML = processSteps[lang].map(step => `
         <div class="process-step">
             <i class="${step.icon}"></i>
             <h3>${step.title}</h3>
@@ -102,9 +131,9 @@ function renderProcessSteps() {
 }
 
 // Render reasons to choose us
-function renderReasons() {
+function renderReasons(lang) {
     const reasonsContainer = document.getElementById('reasons');
-    reasonsContainer.innerHTML = reasons.map(reason => `
+    reasonsContainer.innerHTML = reasons[lang].map(reason => `
         <div class="reason-item" onclick="toggleReason(this)">
             <i class="${reason.icon} reason-icon"></i>
             <div class="reason-text">
