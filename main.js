@@ -76,7 +76,7 @@ const reasons = {
     ],
     pt: [
         { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos a velocidade sem comprometer a qualidade." },
-        { icon: "fas fa-users", title: "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no  setor." },
+        { icon: "fas fa-users", title: "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de  experiência no setor." },
         { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as ferramentas e estruturas mais recentes para resultados ideais." },
         { icon: "fas fa-handshake", title: "Abordagem Centrada no Cliente", description: "Seu sucesso é nossa prioridade máxima, e adaptamos nossas soluções às suas necessidades únicas." }
     ],
@@ -105,6 +105,7 @@ function changeLanguage(lang) {
     document.getElementById('cta-title').textContent = data.ctaTitle;
     document.getElementById('cta-description').textContent = data.ctaDescription;
     document.getElementById('get-started-btn').textContent = data.getStartedBtn;
+    document.getElementById('secondary-cta-btn').textContent = data.getStartedBtn;
     document.getElementById('email-label').textContent = data.emailLabel;
     document.getElementById('submit-btn').textContent = data.submitBtn;
     document.getElementById('form-description').textContent = data.formDescription;
@@ -136,11 +137,8 @@ function renderReasons(lang) {
     reasonsContainer.innerHTML = reasons[lang].map(reason => `
         <div class="reason-item" onclick="toggleReason(this)">
             <i class="${reason.icon} reason-icon"></i>
-            <div class="reason-text">
-                <h3>${reason.title}</h3>
-                <div class="reason-details">${reason.description}</div>
-            </div>
-            <i class="fas fa-chevron-right reason-arrow"></i>
+            <h3>${reason.title}</h3>
+            <div class="reason-details">${reason.description}</div>
         </div>
     `).join('');
 }
@@ -153,6 +151,7 @@ function toggleReason(element) {
 // Show contact form
 function showForm() {
     document.getElementById('get-started-btn').style.display = 'none';
+    document.getElementById('secondary-cta-btn').style.display = 'none';
     document.getElementById('contact-form').style.display = 'block';
 }
 
