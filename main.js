@@ -7,9 +7,9 @@ const languages = {
         approachDescription: "Continuous Discovery & Continuous Delivery",
         processTitle: "Our Process: Iterative Excellence",
         differentiatorTitle: "Why Choose Us?",
-        ctaTitle: "Get Started",
-        secondaryCtatitle: "Ready to Transform Your Business?",
+        ctaTitle: "Ready to Transform Your Business?",
         ctaDescription: "Let's build your success story together",
+        getStartedBtn: "Get Started",
         whatsappText: "WhatsApp",
         emailText: "Send Email"
     },
@@ -20,9 +20,9 @@ const languages = {
         approachDescription: "Descoberta Contínua & Entrega Contínua",
         processTitle: "Nosso Processo: Excelência Iterativa",
         differentiatorTitle: "Por Que Nos Escolher?",
-        ctaTitle: "Comece Agora",
-        secondaryCtatitle: "Pronto para Transformar Seu Negócio?",
+        ctaTitle: "Pronto para Transformar Seu Negócio?",
         ctaDescription: "Vamos construir sua história de sucesso juntos",
+        getStartedBtn: "Começar",
         whatsappText: "WhatsApp",
         emailText: "Enviar E-mail"
     },
@@ -33,9 +33,9 @@ const languages = {
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
         processTitle: "Nuestro Proceso: Excelencia Iterativa",
         differentiatorTitle: "¿Por Qué Elegirnos?",
-        ctaTitle: "Empieza Ahora",
-        secondaryCtatitle: "¿Listo para Transformar Tu Negocio?",
+        ctaTitle: "¿Listo para Transformar Tu Negocio?",
         ctaDescription: "Construyamos juntos tu historia de éxito",
+        getStartedBtn: "Empezar",
         whatsappText: "WhatsApp",
         emailText: "Enviar Correo"
     }
@@ -73,8 +73,8 @@ const reasons = {
     ],
     pt: [
         { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos a velocidade sem comprometer a qualidade." },
-        { icon: "fas fa-users", title:  "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no setor." },
-        { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as ferramentas e estruturas mais recentes para resultados ideais." },
+        { icon: "fas fa-users", title: "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no setor." },
+        { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as  ferramentas e estruturas mais recentes para resultados ideais." },
         { icon: "fas fa-handshake", title: "Abordagem Centrada no Cliente", description: "Seu sucesso é nossa prioridade máxima, e adaptamos nossas soluções às suas necessidades únicas." }
     ],
     es: [
@@ -100,8 +100,9 @@ function changeLanguage(lang) {
     document.getElementById('process-title').textContent = data.processTitle;
     document.getElementById('differentiators-title').textContent = data.differentiatorTitle;
     document.getElementById('cta-title').textContent = data.ctaTitle;
-    document.getElementById('secondary-cta-title').textContent = data.secondaryCtatitle;
     document.getElementById('cta-description').textContent = data.ctaDescription;
+    document.getElementById('get-started-btn').textContent = data.getStartedBtn;
+    document.getElementById('secondary-cta-btn').textContent = data.getStartedBtn;
     document.getElementById('whatsapp-text').textContent = data.whatsappText;
     document.getElementById('email-text').textContent = data.emailText;
     document.getElementById('secondary-whatsapp-text').textContent = data.whatsappText;
@@ -120,7 +121,7 @@ function changeLanguage(lang) {
 function renderProcessSteps(lang) {
     const processStepsContainer = document.getElementById('process-steps');
     processStepsContainer.innerHTML = processSteps[lang].map(step => `
-        <div class="process-step">
+        <div class="process-step" onclick="toggleProcess(this)">
             <i class="${step.icon}"></i>
             <h3>${step.title}</h3>
             <div class="process-details">${step.description}</div>
@@ -132,12 +133,42 @@ function renderProcessSteps(lang) {
 function renderReasons(lang) {
     const reasonsContainer = document.getElementById('reasons');
     reasonsContainer.innerHTML = reasons[lang].map(reason => `
-        <div class="reason-item">
+        <div class="reason-item" onclick="toggleReason(this)">
             <i class="${reason.icon} reason-icon"></i>
             <h3>${reason.title}</h3>
             <div class="reason-details">${reason.description}</div>
         </div>
     `).join('');
+}
+
+// Toggle reason details
+function toggleReason(element) {
+    const reasonsContainer = document.getElementById('reasons');
+    const allReasons = reasonsContainer.querySelectorAll('.reason-item');
+    const isExpanded = element.classList.contains('expanded');
+
+    allReasons.forEach(reason => {
+        reason.classList.toggle('expanded', !isExpanded);
+    });
+}
+
+// Toggle process details
+function toggleProcess(element) {
+    const processStepsContainer = document.getElementById('process-steps');
+    const allSteps = processStepsContainer.querySelectorAll('.process-step');
+    const isExpanded = element.classList.contains('expanded');
+
+    allSteps.forEach(step => {
+        step.classList.toggle('expanded', !isExpanded);
+    });
+}
+
+// Show contact options
+function showContactOptions() {
+    document.getElementById('get-started-btn').style.display = 'none';
+    document.getElementById('contact-options').style.display = 'flex';
+    document.getElementById('secondary-cta-btn').style.display = 'none';
+    document.getElementById('secondary-contact-options').style.display = 'flex';
 }
 
 // Initialize the page when the DOM is loaded
