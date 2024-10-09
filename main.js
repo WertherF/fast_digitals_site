@@ -7,20 +7,22 @@ const languages = {
         approachDescription: "Continuous Discovery & Continuous Delivery",
         processTitle: "Our Process: Iterative Excellence",
         differentiatorTitle: "Why Choose Us?",
+        theyChooseUsTitle: "They Choose Us",
         ctaTitle: "Ready to Transform Your Business?",
         ctaDescription: "Let's build your success story together",
         getStartedBtn: "Get Started",
-        
         whatsappText: "WhatsApp",
         emailText: "Send Email"
     },
     pt: {
         headline: "Aplicativos Rápidos para Empresas Inovadoras",
+        
         subheadline: "Potencializando Seu Negócio com Tecnologia de Ponta",
         approachTitle: "Nossa Abordagem: O Diamante Duplo",
         approachDescription: "Descoberta Contínua & Entrega Contínua",
         processTitle: "Nosso Processo: Excelência Iterativa",
         differentiatorTitle: "Por Que Nos Escolher?",
+        theyChooseUsTitle: "Eles Nos Escolhem",
         ctaTitle: "Pronto para Transformar Seu Negócio?",
         ctaDescription: "Vamos construir sua história de sucesso juntos",
         getStartedBtn: "Começar",
@@ -34,6 +36,7 @@ const languages = {
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
         processTitle: "Nuestro Proceso: Excelencia Iterativa",
         differentiatorTitle: "¿Por Qué Elegirnos?",
+        theyChooseUsTitle: "Ellos Nos Eligen",
         ctaTitle: "¿Listo para Transformar Tu Negocio?",
         ctaDescription: "Construyamos juntos tu historia de éxito",
         getStartedBtn: "Empezar",
@@ -101,6 +104,7 @@ function changeLanguage(lang) {
     document.getElementById('approach-description').textContent = data.approachDescription;
     document.getElementById('process-title').textContent = data.processTitle;
     document.getElementById('differentiators-title').textContent = data.differentiatorTitle;
+    document.getElementById('they-choose-us-title').textContent = data.theyChooseUsTitle;
     document.getElementById('cta-title').textContent = data.ctaTitle;
     document.getElementById('cta-description').textContent = data.ctaDescription;
     document.getElementById('get-started-btn').textContent = data.getStartedBtn;
