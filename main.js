@@ -10,6 +10,7 @@ const languages = {
         ctaTitle: "Ready to Transform Your Business?",
         ctaDescription: "Let's build your success story together",
         getStartedBtn: "Get Started",
+        
         whatsappText: "WhatsApp",
         emailText: "Send Email"
     },
@@ -74,7 +75,7 @@ const reasons = {
     pt: [
         { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos a velocidade sem comprometer a qualidade." },
         { icon: "fas fa-users", title: "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no setor." },
-        { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as  ferramentas e estruturas mais recentes para resultados ideais." },
+        { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as ferramentas e estruturas mais recentes para resultados ideais." },
         { icon: "fas fa-handshake", title: "Abordagem Centrada no Cliente", description: "Seu sucesso é nossa prioridade máxima, e adaptamos nossas soluções às suas necessidades únicas." }
     ],
     es: [
@@ -87,7 +88,8 @@ const reasons = {
 
 // Initialize the page
 function initPage() {
-    changeLanguage('pt');
+    changeLanguage('en');
+    initTestimonialCarousel();
 }
 
 // Change language
@@ -163,12 +165,40 @@ function toggleProcess(element) {
     });
 }
 
-// Show contact options
-function showContactOptions() {
-    document.getElementById('get-started-btn').style.display = 'none';
-    document.getElementById('contact-options').style.display = 'flex';
-    document.getElementById('secondary-cta-btn').style.display = 'none';
-    document.getElementById('secondary-contact-options').style.display = 'flex';
+// Toggle contact options
+function toggleContactOptions(section) {
+    const btnId = section === 'primary' ? 'get-started-btn' : 'secondary-cta-btn';
+    const optionsId = section === 'primary' ? 'contact-options' : 'secondary-contact-options';
+    const btn = document.getElementById(btnId);
+    const options = document.getElementById(optionsId);
+
+    if (options.style.display === 'none') {
+        options.style.display = 'flex';
+        btn.classList.add('disabled');
+    } else {
+        options.style.display = 'none';
+        btn.classList.remove('disabled');
+    }
+}
+
+// Initialize testimonial carousel
+function initTestimonialCarousel() {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
 }
 
 // Initialize the page when the DOM is loaded
