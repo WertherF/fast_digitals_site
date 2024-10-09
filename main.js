@@ -87,7 +87,7 @@ const reasons = {
 
 // Initialize the page
 function initPage() {
-    changeLanguage('en');
+    changeLanguage('pt');
 }
 
 // Change language
