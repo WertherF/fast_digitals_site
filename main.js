@@ -7,9 +7,9 @@ const languages = {
         approachDescription: "Continuous Discovery & Continuous Delivery",
         processTitle: "Our Process: Iterative Excellence",
         differentiatorTitle: "Why Choose Us?",
-        ctaTitle: "Ready to Transform Your Business?",
+        ctaTitle: "Get Started",
+        secondaryCtatitle: "Ready to Transform Your Business?",
         ctaDescription: "Let's build your success story together",
-        getStartedBtn: "Get Started",
         whatsappText: "WhatsApp",
         emailText: "Send Email"
     },
@@ -20,9 +20,9 @@ const languages = {
         approachDescription: "Descoberta Contínua & Entrega Contínua",
         processTitle: "Nosso Processo: Excelência Iterativa",
         differentiatorTitle: "Por Que Nos Escolher?",
-        ctaTitle: "Pronto para Transformar Seu Negócio?",
+        ctaTitle: "Comece Agora",
+        secondaryCtatitle: "Pronto para Transformar Seu Negócio?",
         ctaDescription: "Vamos construir sua história de sucesso juntos",
-        getStartedBtn: "Começar",
         whatsappText: "WhatsApp",
         emailText: "Enviar E-mail"
     },
@@ -33,9 +33,9 @@ const languages = {
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
         processTitle: "Nuestro Proceso: Excelencia Iterativa",
         differentiatorTitle: "¿Por Qué Elegirnos?",
-        ctaTitle: "¿Listo para Transformar Tu Negocio?",
+        ctaTitle: "Empieza Ahora",
+        secondaryCtatitle: "¿Listo para Transformar Tu Negocio?",
         ctaDescription: "Construyamos juntos tu historia de éxito",
-        getStartedBtn: "Empezar",
         whatsappText: "WhatsApp",
         emailText: "Enviar Correo"
     }
@@ -69,11 +69,11 @@ const reasons = {
         { icon: "fas fa-bolt", title: "Lightning Fast Delivery", description: "We prioritize speed without compromising quality." },
         { icon: "fas fa-users", title: "Expert Team", description: "Our seasoned professionals bring years of industry experience." },
         { icon: "fas fa-cog", title: "Cutting-edge Technology", description: "We leverage the latest tools and frameworks for optimal results." },
-        { icon: "fas  fa-handshake", title: "Client-Centric Approach", description: "Your success is our top priority, and we tailor our solutions to your unique needs." }
+        { icon: "fas fa-handshake", title: "Client-Centric Approach", description: "Your success is our top priority, and we tailor our solutions to your unique needs." }
     ],
     pt: [
         { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos a velocidade sem comprometer a qualidade." },
-        { icon: "fas fa-users", title: "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no setor." },
+        { icon: "fas fa-users", title:  "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no setor." },
         { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as ferramentas e estruturas mais recentes para resultados ideais." },
         { icon: "fas fa-handshake", title: "Abordagem Centrada no Cliente", description: "Seu sucesso é nossa prioridade máxima, e adaptamos nossas soluções às suas necessidades únicas." }
     ],
@@ -100,9 +100,8 @@ function changeLanguage(lang) {
     document.getElementById('process-title').textContent = data.processTitle;
     document.getElementById('differentiators-title').textContent = data.differentiatorTitle;
     document.getElementById('cta-title').textContent = data.ctaTitle;
+    document.getElementById('secondary-cta-title').textContent = data.secondaryCtatitle;
     document.getElementById('cta-description').textContent = data.ctaDescription;
-    document.getElementById('get-started-btn').textContent = data.getStartedBtn;
-    document.getElementById('secondary-cta-btn').textContent = data.getStartedBtn;
     document.getElementById('whatsapp-text').textContent = data.whatsappText;
     document.getElementById('email-text').textContent = data.emailText;
     document.getElementById('secondary-whatsapp-text').textContent = data.whatsappText;
@@ -124,7 +123,7 @@ function renderProcessSteps(lang) {
         <div class="process-step">
             <i class="${step.icon}"></i>
             <h3>${step.title}</h3>
-            <p>${step.description}</p>
+            <div class="process-details">${step.description}</div>
         </div>
     `).join('');
 }
@@ -133,25 +132,12 @@ function renderProcessSteps(lang) {
 function renderReasons(lang) {
     const reasonsContainer = document.getElementById('reasons');
     reasonsContainer.innerHTML = reasons[lang].map(reason => `
-        <div class="reason-item" onclick="toggleReason(this)">
+        <div class="reason-item">
             <i class="${reason.icon} reason-icon"></i>
             <h3>${reason.title}</h3>
             <div class="reason-details">${reason.description}</div>
         </div>
     `).join('');
-}
-
-// Toggle reason details
-function toggleReason(element) {
-    element.classList.toggle('expanded');
-}
-
-// Show contact options
-function showContactOptions() {
-    document.getElementById('get-started-btn').style.display = 'none';
-    document.getElementById('contact-options').style.display = 'flex';
-    document.getElementById('secondary-cta-btn').style.display = 'none';
-    document.getElementById('secondary-contact-options').style.display = 'flex';
 }
 
 // Initialize the page when the DOM is loaded
