@@ -23,16 +23,14 @@
         <section class="hero">
             <h1 id="headline">Fast-Delivered Apps for Forward-Thinking Companies</h1>
             <p id="subheadline">Empowering Your Business with Cutting-Edge Technology</p>
-            <div class="cta-area">
-                <h2 id="cta-title">Get Started</h2>
-                <div class="contact-options">
-                    <a href="https://wa.me/5521980343553?text=Preciso%20de%20um%20app" target="_blank" class="contact-btn whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> <span id="whatsapp-text">WhatsApp</span>
-                    </a>
-                    <a href="mailto:fidalgo.werther@gmail.com" class="contact-btn email-btn">
-                        <i class="fas fa-envelope"></i> <span id="email-text">Send Email</span>
-                    </a>
-                </div>
+            <button id="get-started-btn" class="cta-button" onclick="showContactOptions()">Get Started</button>
+            <div id="contact-options" class="contact-options" style="display: none;">
+                <a href="https://wa.me/5521980343553?text=Preciso%20de%20um%20app" target="_blank" class="contact-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> <span id="whatsapp-text">WhatsApp</span>
+                </a>
+                <a href="mailto:fidalgo.werther@gmail.com" class="contact-btn email-btn">
+                    <i class="fas fa-envelope"></i> <span id="email-text">Send Email</span>
+                </a>
             </div>
         </section>
 
@@ -53,9 +51,10 @@
         </section>
 
         <section class="cta">
-            <h2 id="secondary-cta-title">Ready to Transform Your Business?</h2>
+            <h2 id="cta-title">Ready to Transform Your Business?</h2>
             <p id="cta-description">Let's build your success story together</p>
-            <div class="contact-options">
+            <button id="secondary-cta-btn" class="cta-button" onclick="showContactOptions()">Get Started</button>
+            <div id="secondary-contact-options" class="contact-options" style="display: none;">
                 <a href="https://wa.me/5521980343553?text=Preciso%20de%20um%20app" target="_blank" class="contact-btn whatsapp-btn">
                     <i class="fab fa-whatsapp"></i> <span id="secondary-whatsapp-text">WhatsApp</span>
                 </a>
