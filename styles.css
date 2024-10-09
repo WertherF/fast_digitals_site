@@ -3,6 +3,7 @@
     --text-color: #ffffff;
     --accent-color: #00ffff;
     --secondary-color: #ff00ff;
+    --gray-background: #1a1a1a;
 }
 
 body, html {
@@ -190,12 +191,16 @@ h2 {
 
 .they-choose-us {
     text-align: center;
+    background-color: var(--gray-background);
+    padding: 4rem 0;
+    margin: 4rem 0;
 }
 
 .logo-carousel {
     overflow: hidden;
     white-space: nowrap;
     margin: 2rem 0;
+    padding: 0 2rem;
 }
 
 .logo-slide {
@@ -204,8 +209,8 @@ h2 {
 }
 
 .logo-slide img {
-    height: 50px;
-    margin: 0 2rem;
+    height: 80px;
+    margin: 0 3rem;
     vertical-align: middle;
 }
 
@@ -220,7 +225,7 @@ h2 {
 
 .testimonial-carousel {
     position: relative;
-    max-width: 600px;
+    max-width: 800px;
     margin: 2rem auto;
     overflow: hidden;
 }
@@ -272,5 +277,10 @@ footer {
 
     .contact-options {
         flex-direction: column;
+    }
+
+    .logo-slide img {
+        height: 60px;
+        margin: 0 2rem;
     }
 }
