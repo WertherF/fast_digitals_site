@@ -39,7 +39,7 @@ nav {
 .language-selector {
     display: flex;
     gap: 10px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .lang-btn {
@@ -51,7 +51,12 @@ nav {
     transition: all 0.3s ease;
 }
 
-.lang-btn:hover, .lang-btn.active {
+.lang-btn:hover {
+    background: var(--accent-color);
+    color: var(--background-color);
+}
+
+.lang-btn.active {
     background: var(--accent-color);
     color: var(--background-color);
 }
@@ -87,39 +92,42 @@ h2 {
     padding: 6rem 2rem;
 }
 
-.cta-area {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 2rem;
-    margin-top: 2rem;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+.cta-button {
+    background: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 
-.cta-area h2 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+.cta-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
 }
 
 .contact-options {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .contact-btn {
     display: inline-flex;
     align-items: center;
-    padding: 12px 24px;
-    border-radius: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
-    font-size: 1.1rem;
 }
 
 .contact-btn i {
     margin-right: 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .whatsapp-btn {
@@ -129,8 +137,6 @@ h2 {
 
 .whatsapp-btn:hover {
     background-color: #128C7E;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
 }
 
 .email-btn {
@@ -140,8 +146,6 @@ h2 {
 
 .email-btn:hover {
     background-color: #B23121;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(212, 70, 56, 0.4);
 }
 
 .double-diamond-img {
@@ -152,7 +156,7 @@ h2 {
 
 .process-steps, .reasons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -161,7 +165,9 @@ h2 {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
     border-radius: 8px;
+    text-align: center;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .process-step:hover, .reason-item:hover {
@@ -176,8 +182,15 @@ h2 {
 }
 
 .reason-details, .process-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.reason-item.expanded .reason-details,
+.process-step.expanded .process-details {
+    max-height: 200px;
     margin-top: 1rem;
-    color: #bbb;
 }
 
 footer {
