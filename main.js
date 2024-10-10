@@ -1,8 +1,10 @@
 // Language data
 const languages = {
     en: {
-        headline: "Fast-Delivered Apps for Forward-Thinking Companies",
+        headline:  "Fast-Delivered Apps for Forward-Thinking Companies",
+        slogan: "Fast. Tailored. Connected.",
         subheadline: "Empowering Your Business with Cutting-Edge Technology",
+        description: "We're Fast Digitals, a trio of tech-loving friends turned co-founders. Our passion? Crafting digital solutions that make people's lives easier and businesses more efficient. We're not just coders; we're problem solvers, dreamers, and your partners in innovation. With a blend of cutting-edge tech and a deep understanding of user needs, we're here to transform your ideas into reality. Join us on this exciting journey of fast-paced, user-centered digital evolution!",
         approachTitle: "Our Approach: The Double Diamond",
         approachDescription: "Continuous Discovery & Continuous Delivery",
         processTitle: "Our Process: Iterative Excellence",
@@ -16,8 +18,9 @@ const languages = {
     },
     pt: {
         headline: "Aplicativos Rápidos para Empresas Inovadoras",
-        
+        slogan: "Rápido. Personalizado. Conectado.",
         subheadline: "Potencializando Seu Negócio com Tecnologia de Ponta",
+        description: "Somos a Fast Digitals, um trio de amigos apaixonados por tecnologia que se tornaram co-fundadores. Nossa paixão? Criar soluções digitais que facilitem a vida das pessoas e tornem as empresas mais eficientes. Não somos apenas programadores; somos solucionadores de problemas, sonhadores e seus parceiros em inovação. Com uma combinação de tecnologia de ponta e uma profunda compreensão das necessidades dos usuários, estamos aqui para transformar suas ideias em realidade. Junte-se a nós nesta emocionante jornada de evolução digital rápida e centrada no usuário!",
         approachTitle: "Nossa Abordagem: O Diamante Duplo",
         approachDescription: "Descoberta Contínua & Entrega Contínua",
         processTitle: "Nosso Processo: Excelência Iterativa",
@@ -31,7 +34,9 @@ const languages = {
     },
     es: {
         headline: "Aplicaciones Rápidas para Empresas Innovadoras",
+        slogan: "Rápido. Personalizado. Conectado.",
         subheadline: "Potenciando Tu Negocio con Tecnología de Vanguardia",
+        description: "Somos Fast Digitals, un trío de amigos amantes de la tecnología convertidos en cofundadores. ¿Nuestra pasión? Crear soluciones digitales que faciliten la vida de las personas y hagan que las empresas sean más eficientes. No somos solo programadores; somos solucionadores de problemas, soñadores y tus socios en innovación. Con una combinación de tecnología de vanguardia y una profunda comprensión de las necesidades de los usuarios, estamos aquí para transformar tus ideas en realidad. ¡Únete a nosotros en este emocionante viaje de evolución digital rápida y centrada en el usuario!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante",
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
         processTitle: "Nuestro Proceso: Excelencia Iterativa",
@@ -99,7 +104,9 @@ function initPage() {
 function changeLanguage(lang) {
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
+    document.getElementById('slogan').textContent = data.slogan;
     document.getElementById('subheadline').textContent = data.subheadline;
+    document.getElementById('description').textContent = data.description;
     document.getElementById('approach-title').textContent = data.approachTitle;
     document.getElementById('approach-description').textContent = data.approachDescription;
     document.getElementById('process-title').textContent = data.processTitle;
