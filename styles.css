@@ -93,6 +93,17 @@ h2 {
     padding: 6rem 2rem;
 }
 
+.slogan {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.about-us {
+    background-color: var(--gray-background);
+    text-align: center;
+}
+
 .cta-button {
     background: var(--accent-color);
     color: var(--background-color);
