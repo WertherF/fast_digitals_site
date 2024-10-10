@@ -1,7 +1,7 @@
 // Language data
 const languages = {
     en: {
-        headline:  "Fast-Delivered Apps for Forward-Thinking Companies",
+        headline: "Fast-Delivered Apps for Forward-Thinking Companies",
         slogan: "Fast. Tailored. Connected.",
         subheadline: "Empowering Your Business with Cutting-Edge Technology",
         description: "We're Fast Digitals, a trio of tech-loving friends turned co-founders. Our passion? Crafting digital solutions that make people's lives easier and businesses more efficient. We're not just coders; we're problem solvers, dreamers, and your partners in innovation. With a blend of cutting-edge tech and a deep understanding of user needs, we're here to transform your ideas into reality. Join us on this exciting journey of fast-paced, user-centered digital evolution!",
@@ -104,7 +104,7 @@ function initPage() {
 function changeLanguage(lang) {
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
-    document.getElementById('slogan').textContent = data.slogan;
+    document.getElementById('header-slogan').textContent = data.slogan;
     document.getElementById('subheadline').textContent = data.subheadline;
     document.getElementById('description').textContent = data.description;
     document.getElementById('approach-title').textContent = data.approachTitle;
@@ -120,6 +120,7 @@ function changeLanguage(lang) {
     document.getElementById('email-text').textContent = data.emailText;
     document.getElementById('secondary-whatsapp-text').textContent = data.whatsappText;
     document.getElementById('secondary-email-text').textContent = data.emailText;
+    document.getElementById('footer-slogan').textContent = data.slogan;
 
     renderProcessSteps(lang);
     renderReasons(lang);
