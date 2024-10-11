@@ -16,7 +16,6 @@ const languages = {
         whatsappText: "WhatsApp",
         emailText: "Send Email",
         additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation."
-        
     },
     pt: {
         headline: "Impulsione Sua Inovação com Apps Sob Medida em Tempo Recorde",
@@ -100,12 +99,14 @@ const reasons = {
 
 // Initialize the page
 function initPage() {
+    console.log('Initializing page...');
     changeLanguage('pt');
     initTestimonialCarousel();
 }
 
 // Change language
 function changeLanguage(lang) {
+    console.log('Changing language to:', lang);
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
     document.getElementById('header-slogan').textContent = data.slogan;
@@ -184,6 +185,7 @@ function toggleProcess(element) {
 
 // Toggle contact options
 function toggleContactOptions(section) {
+    console.log('Toggling contact options for:', section);
     const btnId = section === 'primary' ? 'get-started-btn' : 'secondary-cta-btn';
     const optionsId = section === 'primary' ? 'contact-options' : 'secondary-contact-options';
     const btn = document.getElementById(btnId);
@@ -219,5 +221,4 @@ function initTestimonialCarousel() {
 }
 
 // Initialize the page when the DOM is loaded
-document.addEventListener('DOMContentLoaded', init
-Page);
+document.addEventListener('DOMContentLoaded', initPage);
