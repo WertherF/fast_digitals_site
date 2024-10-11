@@ -16,6 +16,7 @@ const languages = {
         whatsappText: "WhatsApp",
         emailText: "Send Email",
         additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation."
+        
     },
     pt: {
         headline: "Impulsione Sua Inovação com Apps Sob Medida em Tempo Recorde",
