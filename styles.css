@@ -3,7 +3,7 @@
     --text-color: #ffffff;
     --accent-color: #00ffff;
     --secondary-color: #ff00ff;
-    --gray-background: #1a1a1a;    
+    --gray-background: #1a1a1a;
 }
 
 body, html {
@@ -65,12 +65,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.lang-btn:hover {
-    background: var(--accent-color);
-    color: var(--background-color);
-}
-
-.lang-btn.active {
+.lang-btn:hover, .lang-btn.active {
     background: var(--accent-color);
     color: var(--background-color);
 }
@@ -265,9 +260,10 @@ h2 {
 }
 
 .testimonial-slide {
-    text-align:  center;
+    text-align: center;
     padding: 1rem;
     display: none;
+
 }
 
 .testimonial-slide.active {
