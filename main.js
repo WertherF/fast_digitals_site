@@ -1,9 +1,9 @@
 // Language data
 const languages = {
     en: {
-        headline: "Fast-Delivered Apps for Forward-Thinking Companies",
-        slogan: "Fast. Tailored. Connected.",
-        subheadline: "Empowering Your Business with Cutting-Edge Technology",
+        headline: "Boost Your Innovation with Tailor-Made Apps in Record Time",
+        slogan: "Personal. Fast. Adaptive.",
+        subheadline: "Transform Ideas into Reality: Agile Solutions that Evolve with You",
         description: "We're Fast Digitals, a trio of tech-loving friends turned co-founders. Our passion? Crafting digital solutions that make people's lives easier and businesses more efficient. We're not just coders; we're problem solvers, dreamers, and your partners in innovation. With a blend of cutting-edge tech and a deep understanding of user needs, we're here to transform your ideas into reality. Join us on this exciting journey of fast-paced, user-centered digital evolution!",
         approachTitle: "Our Approach: The Double Diamond",
         approachDescription: "Continuous Discovery & Continuous Delivery",
@@ -12,14 +12,15 @@ const languages = {
         theyChooseUsTitle: "They Choose Us",
         ctaTitle: "Ready to Transform Your Business?",
         ctaDescription: "Let's build your success story together",
-        getStartedBtn: "Get Started",
+        getStartedBtn: "Get Your Solution",
         whatsappText: "WhatsApp",
-        emailText: "Send Email"
+        emailText: "Send Email",
+        additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation."
     },
     pt: {
-        headline: "Aplicativos Rápidos para Empresas Inovadoras",
-        slogan: "Rápido. Personalizado. Conectado.",
-        subheadline: "Potencializando Seu Negócio com Tecnologia de Ponta",
+        headline: "Impulsione Sua Inovação com Apps Sob Medida em Tempo Recorde",
+        slogan: "Personalizado. Ágil. Flexível.",
+        subheadline: "Transforme Ideias em Realidade: Soluções Ágeis que Evoluem com Você",
         description: "Somos a Fast Digitals, um trio de amigos apaixonados por tecnologia que se tornaram co-fundadores. Nossa paixão? Criar soluções digitais que facilitem a vida das pessoas e tornem as empresas mais eficientes. Não somos apenas programadores; somos solucionadores de problemas, sonhadores e seus parceiros em inovação. Com uma combinação de tecnologia de ponta e uma profunda compreensão das necessidades dos usuários, estamos aqui para transformar suas ideias em realidade. Junte-se a nós nesta emocionante jornada de evolução digital rápida e centrada no usuário!",
         approachTitle: "Nossa Abordagem: O Diamante Duplo",
         approachDescription: "Descoberta Contínua & Entrega Contínua",
@@ -28,14 +29,15 @@ const languages = {
         theyChooseUsTitle: "Eles Nos Escolhem",
         ctaTitle: "Pronto para Transformar Seu Negócio?",
         ctaDescription: "Vamos construir sua história de sucesso juntos",
-        getStartedBtn: "Começar",
+        getStartedBtn: "Receba Sua Solução",
         whatsappText: "WhatsApp",
-        emailText: "Enviar E-mail"
+        emailText: "Enviar E-mail",
+        additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital."
     },
     es: {
-        headline: "Aplicaciones Rápidas para Empresas Innovadoras",
-        slogan: "Rápido. Personalizado. Conectado.",
-        subheadline: "Potenciando Tu Negocio con Tecnología de Vanguardia",
+        headline: "Impulse Su Innovación con Apps a Medida en Tiempo Récord",
+        slogan: "Personal. Rápido. Adaptativo.",
+        subheadline: "Transforme Ideas en Realidad: Soluciones Ágiles que Evolucionan con Usted",
         description: "Somos Fast Digitals, un trío de amigos amantes de la tecnología convertidos en cofundadores. ¿Nuestra pasión? Crear soluciones digitales que faciliten la vida de las personas y hagan que las empresas sean más eficientes. No somos solo programadores; somos solucionadores de problemas, soñadores y tus socios en innovación. Con una combinación de tecnología de vanguardia y una profunda comprensión de las necesidades de los usuarios, estamos aquí para transformar tus ideas en realidad. ¡Únete a nosotros en este emocionante viaje de evolución digital rápida y centrada en el usuario!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante",
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
@@ -44,9 +46,10 @@ const languages = {
         theyChooseUsTitle: "Ellos Nos Eligen",
         ctaTitle: "¿Listo para Transformar Tu Negocio?",
         ctaDescription: "Construyamos juntos tu historia de éxito",
-        getStartedBtn: "Empezar",
+        getStartedBtn: "Obtenga Su Solución",
         whatsappText: "WhatsApp",
-        emailText: "Enviar Correo"
+        emailText: "Enviar Correo",
+        additionalText: "Desde el concepto hasta el lanzamiento en semanas, no meses. Vea cómo podemos acelerar su transformación digital."
     }
 };
 
@@ -121,6 +124,7 @@ function changeLanguage(lang) {
     document.getElementById('secondary-whatsapp-text').textContent = data.whatsappText;
     document.getElementById('secondary-email-text').textContent = data.emailText;
     document.getElementById('footer-slogan').textContent = data.slogan;
+    document.getElementById('additional-text').textContent = data.additionalText;
 
     renderProcessSteps(lang);
     renderReasons(lang);
@@ -214,4 +218,5 @@ function initTestimonialCarousel() {
 }
 
 // Initialize the page when the DOM is loaded
-document.addEventListener('DOMContentLoaded', initPage);
+document.addEventListener('DOMContentLoaded', init
+Page);
