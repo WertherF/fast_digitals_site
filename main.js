@@ -99,14 +99,12 @@ const reasons = {
 
 // Initialize the page
 function initPage() {
-    console.log('Initializing page...');
     changeLanguage('pt');
     initTestimonialCarousel();
 }
 
 // Change language
 function changeLanguage(lang) {
-    console.log('Changing language to:', lang);
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
     document.getElementById('header-slogan').textContent = data.slogan;
@@ -133,7 +131,7 @@ function changeLanguage(lang) {
 
     // Update active state for language buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang.toUpperCase());
+        btn.classList.toggle('active', btn.dataset.lang === lang);
     });
 }
 
@@ -163,29 +161,16 @@ function renderReasons(lang) {
 
 // Toggle reason details
 function toggleReason(element) {
-    const reasonsContainer = document.getElementById('reasons');
-    const allReasons = reasonsContainer.querySelectorAll('.reason-item');
-    const isExpanded = element.classList.contains('expanded');
-
-    allReasons.forEach(reason => {
-        reason.classList.toggle('expanded', !isExpanded);
-    });
+    element.classList.toggle('expanded');
 }
 
 // Toggle process details
 function toggleProcess(element) {
-    const processStepsContainer = document.getElementById('process-steps');
-    const allSteps = processStepsContainer.querySelectorAll('.process-step');
-    const isExpanded = element.classList.contains('expanded');
-
-    allSteps.forEach(step => {
-        step.classList.toggle('expanded', !isExpanded);
-    });
+    element.classList.toggle('expanded');
 }
 
 // Toggle contact options
 function toggleContactOptions(section) {
-    console.log('Toggling contact options for:', section);
     const btnId = section === 'primary' ? 'get-started-btn' : 'secondary-cta-btn';
     const optionsId = section === 'primary' ? 'contact-options' : 'secondary-contact-options';
     const btn = document.getElementById(btnId);
