@@ -170,6 +170,15 @@ h2 {
     font-size: 1.2rem;
 }
 
+.additional-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .double-diamond-img {
     max-width: 100%;
     height: auto;
@@ -256,7 +265,7 @@ h2 {
 }
 
 .testimonial-slide {
-    text-align: center;
+    text-align:  center;
     padding: 1rem;
     display: none;
 }
