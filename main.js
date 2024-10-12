@@ -81,22 +81,22 @@ const processSteps = {
 // Reasons to choose us data
 const reasons = {
     en: [
-        { icon: "fas fa-bolt", title: "Lightning Fast Delivery", description: "We prioritize speed without compromising quality." },
-        { icon: "fas fa-users", title: "Expert Team", description: "Our seasoned professionals bring years of industry experience." },
-        { icon: "fas fa-cog", title: "Cutting-edge Technology", description: "We leverage the latest tools and frameworks for optimal results." },
-        { icon: "fas fa-handshake", title: "Client-Centric Approach", description: "Your success is our top priority, and we tailor our solutions to your unique needs." }
+        { icon: "fas fa-bolt", title: "Speed", description: "From concept to launch in weeks. Your idea comes to life while the competition is still planning." },
+        { icon: "fas fa-users", title: "Personalization", description: "Every business is unique. We develop flexible apps that adapt and evolve with your market needs." },
+        { icon: "fas fa-cog", title: "Innovation", description: "Our tech-passionate team uses cutting-edge tools to transform complex challenges into elegant and scalable solutions." },
+        { icon: "fas fa-handshake", title: "Evolving Partnership", description: "More than developers, we are your innovation partners. Your success is our mission, ensuring long-term ROI." }
     ],
     pt: [
-        { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos a velocidade sem comprometer a qualidade." },
-        { icon: "fas fa-users", title: "Equipe Especializada", description: "Nossos profissionais experientes trazem anos de experiência no setor." },
-        { icon: "fas fa-cog", title: "Tecnologia de Ponta", description: "Utilizamos as ferramentas e estruturas mais recentes para resultados ideais." },
-        { icon: "fas fa-handshake", title: "Abordagem Centrada no Cliente", description: "Seu sucesso é nossa prioridade máxima, e adaptamos nossas soluções às suas necessidades únicas." }
+        { icon: "fas fa-bolt", title: "Velocidade que Transforma", description: "Do conceito ao lançamento em semanas. Sua ideia ganha vida enquanto a concorrência ainda está planejando." },
+        { icon: "fas fa-users", title: "Soluções Sob Medida", description: "Cada negócio é único. Desenvolvemos apps flexíveis que se adaptam e evoluem com as necessidades do seu mercado." },
+        { icon: "fas fa-cog", title: "Inovação na Prática", description: "Nossa equipe apaixonada por tecnologia utiliza ferramentas de ponta para transformar desafios complexos em soluções elegantes e escaláveis." },
+        { icon: "fas fa-handshake", title: "Parceria que Evolui", description: "Mais que desenvolvedores, somos seus parceiros em inovação. Seu sucesso é nossa missão, garantindo ROI a longo prazo." }
     ],
     es: [
-        { icon: "fas fa-bolt", title: "Entrega Ultrarrápida", description: "Priorizamos la velocidad sin comprometer la calidad." },
-        { icon: "fas fa-users", title: "Equipo Experto", description: "Nuestros profesionales experimentados aportan años de experiencia en la industria." },
-        { icon: "fas fa-cog", title: "Tecnología de Vanguardia", description: "Aprovechamos las últimas herramientas y marcos para obtener resultados óptimos." },
-        { icon: "fas fa-handshake", title: "Enfoque Centrado en el Cliente", description: "Tu éxito es nuestra máxima prioridad, y adaptamos nuestras soluciones a tus necesidades únicas." }
+        { icon: "fas fa-bolt", title: "Velocidad que Transforma", description: "Del concepto al lanzamiento en semanas. Tu idea cobra vida mientras la competencia aún está planificando." },
+        { icon: "fas fa-users", title: "Soluciones a Medida", description: "Cada negocio es único. Desarrollamos aplicaciones flexibles que se adaptan y evolucionan con las necesidades de tu mercado." },
+        { icon: "fas fa-cog", title: "Innovación en la Práctica", description: "Nuestro equipo apasionado por la tecnología utiliza herramientas de vanguardia para transformar desafíos complejos en soluciones elegantes y escalables." },
+        { icon: "fas fa-handshake", title: "Asociación que Evoluciona", description: "Más que desarrolladores, somos tus socios en innovación. Tu éxito es nuestra misión, garantizando un ROI a largo plazo." }
     ]
 };
 
