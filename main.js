@@ -15,7 +15,9 @@ const languages = {
         getStartedBtn: "Get Your Solution",
         whatsappText: "WhatsApp",
         emailText: "Send Email",
-        additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation."
+        additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation.",
+        aboutUsTitle: "Who We Are: Your Digital Innovation Team",
+        aboutUsContent: "Hello! We are FastDigital, a trio of tech-loving friends turned co-founders with a mission: To transform your ideas into amazing digital solutions, in record time. Our passion? Creating apps that not only make people's lives easier but revolutionize business efficiency. What defines us: • Agility: From concept to launch in weeks, not months. • Customization: Each solution is unique, just like your business. • Innovation: We use cutting-edge technology to solve complex challenges. We're not just developers. We're your innovation partners, turning challenges into digital opportunities. Ready to accelerate your digital journey? Let's create the future together!"
     },
     pt: {
         headline: "Impulsione Sua Inovação com Apps Sob Medida em Tempo Recorde",
@@ -32,7 +34,9 @@ const languages = {
         getStartedBtn: "Receba Sua Solução",
         whatsappText: "WhatsApp",
         emailText: "Enviar E-mail",
-        additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital."
+        additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital.",
+        aboutUsTitle: "Quem Somos: Sua Equipe de Inovação Digital",
+        aboutUsContent: "Olá! Somos a FastDigital, um trio de amigos apaixonados por tecnologia que se tornaram co-fundadores com uma missão: Transformar suas ideias em soluções digitais incríveis, em tempo recorde. Nossa paixão? Criar apps que não só facilitam a vida das pessoas, mas revolucionam a eficiência das empresas. O que nos define: • Agilidade: Do conceito ao lançamento em semanas, não meses. • Personalização: Cada solução é única, assim como o seu negócio. • Inovação: Usamos tecnologia de ponta para resolver desafios complexos. Não somos apenas desenvolvedores. Somos seus parceiros em inovação, transformando desafios em oportunidades digitais. Prontos para acelerar sua jornada digital? Vamos criar o futuro juntos!"
     },
     es: {
         headline: "Impulse Su Innovación con Apps a Medida en Tiempo Récord",
@@ -49,7 +53,9 @@ const languages = {
         getStartedBtn: "Obtenga Su Solución",
         whatsappText: "WhatsApp",
         emailText: "Enviar Correo",
-        additionalText: "Desde el concepto hasta el lanzamiento en semanas, no meses. Vea cómo podemos acelerar su transformación digital."
+        additionalText: "Desde el concepto hasta el lanzamiento en semanas, no meses. Vea cómo podemos acelerar su transformación digital.",
+        aboutUsTitle: "Quiénes Somos: Su Equipo de Innovación Digital",
+        aboutUsContent: "¡Hola! Somos FastDigital, un trío de amigos apasionados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!"
     }
 };
 
@@ -125,6 +131,8 @@ function changeLanguage(lang) {
     document.getElementById('secondary-email-text').textContent = data.emailText;
     document.getElementById('footer-slogan').textContent = data.slogan;
     document.getElementById('additional-text').textContent = data.additionalText;
+    document.getElementById('about-us-title').textContent = data.aboutUsTitle;
+    document.getElementById('about-us-content').textContent = data.aboutUsContent;
 
     renderProcessSteps(lang);
     renderReasons(lang);
