@@ -1,3 +1,4 @@
+
 // Language data
 const languages = {
     en: {
