@@ -1,4 +1,3 @@
-
 // Language data
 const languages = {
     en: {
@@ -112,11 +111,12 @@ function initPage() {
 
 // Change language
 function changeLanguage(lang) {
+    console.log('Changing language to:', lang);
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
     document.getElementById('header-slogan').textContent = data.slogan;
     document.getElementById('subheadline').textContent = data.subheadline;
-    document.getElementById('description').textContent = data.description;
+    document.getElementById('description').textContent = data.aboutUsContent; // Updated line
     document.getElementById('approach-title').textContent = data.approachTitle;
     document.getElementById('approach-description').textContent = data.approachDescription;
     document.getElementById('process-title').textContent = data.processTitle;
@@ -133,14 +133,15 @@ function changeLanguage(lang) {
     document.getElementById('footer-slogan').textContent = data.slogan;
     document.getElementById('additional-text').textContent = data.additionalText;
     document.getElementById('about-us-title').textContent = data.aboutUsTitle;
-    document.getElementById('about-us-content').textContent = data.aboutUsContent;
+    //Removed this line: document.getElementById('about-us-content').textContent = data.aboutUsContent;
+
 
     renderProcessSteps(lang);
     renderReasons(lang);
 
     // Update active state for language buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === lang);
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang); // Updated line
     });
 }
 
