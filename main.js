@@ -67,7 +67,7 @@ const processSteps = {
     pt: [
         { icon: "fas fa-lightbulb", title: "Idealizar", description: "Criar soluções inovadoras" },
         { icon: "fas fa-pencil-alt", title: "Projetar", description: "Criar interfaces centradas no usuário" },
-        { icon: "fas fa-code", title: "Desenvolver", description: "Construir aplicações robustas  e escaláveis" },
+        { icon: "fas fa-code", title: "Desenvolver", description: "Construir aplicações robustas e escaláveis" },
         { icon: "fas fa-rocket", title: "Lançar", description: "Implantar e monitorar sua solução" }
     ],
     es: [
@@ -136,7 +136,7 @@ function changeLanguage(lang) {
 
     // Update active state for language buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang.toUpperCase());
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang.toLowerCase());
     });
 }
 
