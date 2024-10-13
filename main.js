@@ -90,13 +90,13 @@ const reasons = {
         { icon: "fas fa-bolt", title: "Velocidade que Transforma", description: "Do conceito ao lançamento em semanas. Sua ideia ganha vida enquanto a concorrência ainda está planejando." },
         { icon: "fas fa-users", title: "Soluções Sob Medida", description: "Cada negócio é único. Desenvolvemos apps flexíveis que se adaptam e evoluem com as necessidades do seu mercado." },
         { icon: "fas fa-cog", title: "Inovação na Prática", description: "Nossa equipe apaixonada por tecnologia utiliza ferramentas de ponta para transformar desafios complexos em soluções elegantes e escaláveis." },
-        { icon: "fas fa-handshake", title: "Parceria que Evolui", description: "Mais que desenvolvedores, somos seus parceiros em inovação. Seu sucesso é nossa missão, garantindo ROI a longo prazo." }
+        { icon: "fas fa-handshake", title: "Parceria que Evolui", description: "Mais que desenvolvedores, somos seus parceiros em inovação. Seu sucesso é nossa missão, gerando valor imediato e crescente para o seu negócio." }
     ],
     es: [
         { icon: "fas fa-bolt", title: "Velocidad que Transforma", description: "Del concepto al lanzamiento en semanas. Tu idea cobra vida mientras la competencia aún está planificando." },
         { icon: "fas fa-users", title: "Soluciones a Medida", description: "Cada negocio es único. Desarrollamos aplicaciones flexibles que se adaptan y evolucionan con las necesidades de tu mercado." },
         { icon: "fas fa-cog", title: "Innovación en la Práctica", description: "Nuestro equipo apasionado por la tecnología utiliza herramientas de vanguardia para transformar desafíos complejos en soluciones elegantes y escalables." },
-        { icon: "fas fa-handshake", title: "Asociación que Evoluciona", description: "Más que desarrolladores, somos tus socios en innovación. Tu éxito es nuestra misión, garantizando un ROI a largo plazo." }
+        { icon: "fas fa-handshake", title: "Asociación que Evoluciona", description: "Más que desarrolladores, somos tus socios en innovación. Tu éxito es nuestra misión, generando valor inmediato y creciente para su negocio." }
     ]
 };
 
