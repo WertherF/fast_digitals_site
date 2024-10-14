@@ -17,7 +17,8 @@ const languages = {
         getStartedBtn: "Get Your Solution",
         whatsappText: "WhatsApp",
         emailText: "Send Email",
-        additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation."
+        additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation.",
+        testimonialCtaBtn: "Want to be the next success story? Contact us!"
     },
     pt: {
         headline: "Impulsione Sua Inovação com Apps Sob Medida em Tempo Recorde",
@@ -36,7 +37,8 @@ const languages = {
         getStartedBtn: "Receba Sua Solução",
         whatsappText: "WhatsApp",
         emailText: "Enviar E-mail",
-        additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital."
+        additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital.",
+        testimonialCtaBtn: "Quer ser o próximo caso de sucesso? Fale conosco!"
     },
     es: {
         headline: "Impulse Su Innovación con Apps a Medida en Tiempo Récord",
@@ -55,7 +57,8 @@ const languages = {
         getStartedBtn: "Obtenga Su Solución",
         whatsappText: "WhatsApp",
         emailText: "Enviar Correo",
-        additionalText: "Desde el concepto hasta el lanzamiento en semanas, no meses. Vea cómo podemos acelerar su transformación digital."
+        additionalText: "Desde el concepto hasta el lanzamiento en semanas, no meses. Vea cómo podemos acelerar su transformación digital.",
+        testimonialCtaBtn: "¿Quieres ser el próximo caso de éxito? ¡Contáctanos!"
     }
 };
 
@@ -65,7 +68,7 @@ const processSteps = {
         { icon: "fas fa-lightbulb", title: "Ideate", description: "Brainstorm innovative solutions" },
         { icon: "fas fa-pencil-alt", title: "Design", description: "Create user-centric interfaces" },
         { icon: "fas fa-code", title: "Develop", description: "Build robust and scalable applications" },
-        { icon: "fas fa-rocket", title: "Launch", description: "Deploy and monitor your solution" }
+        { icon: "fas fa-rocket", title: "Launch", description:  "Deploy and monitor your solution" }
     ],
     pt: [
         { icon: "fas fa-lightbulb", title: "Idealizar", description: "Criar soluções inovadoras" },
@@ -177,10 +180,12 @@ function changeLanguage(lang) {
     document.getElementById('whatsapp-text').textContent = data.whatsappText;
     document.getElementById('email-text').textContent = data.emailText;
     document.getElementById('secondary-whatsapp-text').textContent = data.whatsappText;
-    
     document.getElementById('secondary-email-text').textContent = data.emailText;
     document.getElementById('footer-slogan').textContent = data.slogan;
     document.getElementById('additional-text').textContent = data.additionalText;
+    document.getElementById('testimonial-cta-btn').textContent = data.testimonialCtaBtn;
+    document.getElementById('testimonial-whatsapp-text').textContent = data.whatsappText;
+    document.getElementById('testimonial-email-text').textContent = data.emailText;
 
     renderProcessSteps(lang);
     renderReasons(lang);
@@ -240,8 +245,8 @@ function toggleProcess(element) {
 
 // Toggle contact options
 function toggleContactOptions(section) {
-    const btnId = section === 'primary' ? 'get-started-btn' : 'secondary-cta-btn';
-    const optionsId = section === 'primary' ? 'contact-options' : 'secondary-contact-options';
+    const btnId = section === 'primary' ? 'get-started-btn' : (section === 'secondary' ? 'secondary-cta-btn' : 'testimonial-cta-btn');
+    const optionsId = section === 'primary' ? 'contact-options' : (section === 'secondary' ? 'secondary-contact-options' : 'testimonial-contact-options');
     const btn = document.getElementById(btnId);
     const options = document.getElementById(optionsId);
 
