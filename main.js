@@ -8,7 +8,7 @@ const languages = {
         aboutUsContent: "Hello! We are FastDigital, a trio of tech-loving friends turned co-founders with a mission: To transform your ideas into amazing digital solutions, in record time. Our passion? Creating apps that not only make people's lives easier but revolutionize business efficiency. What defines us: • Agility: From concept to launch in weeks, not months. • Customization: Each solution is unique, just like your business. • Innovation: We use cutting-edge technology to solve complex challenges. We're not just developers. We're your innovation partners, turning challenges into digital opportunities. Ready to accelerate your digital journey? Let's create the future together!",
         approachTitle: "Our Approach: The Double Diamond",
         approachDescription: "Continuous Discovery & Continuous Delivery",
-        processTitle: "Our Process: Iterative Excellence",
+        processTitle: "Our Process: Agile Innovation in Action",
         differentiatorTitle: "Why Choose Us?",
         theyChooseUsTitle: "Success Partners: Stories that Inspire",
         logoCarouselSubtitle: "Innovative companies that trust Fast Digitals",
@@ -28,7 +28,7 @@ const languages = {
         aboutUsContent: "Olá! Somos a FastDigital, um trio de amigos apaixonados por tecnologia que se tornaram co-fundadores com uma missão: Transformar suas ideias em soluções digitais incríveis, em tempo recorde. Nossa paixão? Criar apps que não só facilitam a vida das pessoas, mas revolucionam a eficiência das empresas. O que nos define: • Agilidade: Do conceito ao lançamento em semanas, não meses. • Personalização: Cada solução é única, assim como o seu negócio. • Inovação: Usamos tecnologia de ponta para resolver desafios complexos. Não somos apenas desenvolvedores. Somos seus parceiros em inovação, transformando desafios em oportunidades digitais. Prontos para acelerar sua jornada digital? Vamos criar o futuro juntos!",
         approachTitle: "Nossa Abordagem: O Diamante Duplo",
         approachDescription: "Descoberta Contínua & Entrega Contínua",
-        processTitle: "Nosso Processo: Excelência Iterativa",
+        processTitle: "Nosso Processo: Inovação Ágil em Ação",
         differentiatorTitle: "Por Que Nos Escolher?",
         theyChooseUsTitle: "Parceiros de Sucesso: Histórias que Inspiram",
         logoCarouselSubtitle: "Empresas inovadoras que confiam na Fast Digitals",
@@ -48,7 +48,7 @@ const languages = {
         aboutUsContent: "¡Hola! Somos FastDigital, un trío de amigos apasionados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante",
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
-        processTitle: "Nuestro Proceso: Excelencia Iterativa",
+        processTitle: "Nuestro Proceso: Innovación Ágil en Acción",
         differentiatorTitle: "¿Por Qué Elegirnos?",
         theyChooseUsTitle: "Socios de Éxito: Historias que Inspiran",
         logoCarouselSubtitle: "Empresas innovadoras que confían en Fast Digitals",
@@ -65,22 +65,22 @@ const languages = {
 // Process steps data
 const processSteps = {
     en: [
-        { icon: "fas fa-lightbulb", title: "Ideate", description: "Brainstorm innovative solutions" },
-        { icon: "fas fa-pencil-alt", title: "Design", description: "Create user-centric interfaces" },
-        { icon: "fas fa-code", title: "Develop", description: "Build robust and scalable applications" },
-        { icon: "fas fa-rocket", title: "Launch", description:  "Deploy and monitor your solution" }
+        { icon: "fas fa-lightbulb", title: "Create Tailored Solutions", description: "We transform your ideas into innovative concepts that meet your business's unique needs." },
+        { icon: "fas fa-pencil-alt", title: "Design Intuitive Experiences", description: "We create user-centered interfaces that delight and simplify the digital journey." },
+        { icon: "fas fa-code", title: "Build with Agility and Precision", description: "We transform concepts into code, delivering robust and scalable applications in record time." },
+        { icon: "fas fa-rocket", title: "Deliver Value Continuously", description: "We implement your solution and constantly evolve it, ensuring immediate and lasting results." }
     ],
     pt: [
-        { icon: "fas fa-lightbulb", title: "Idealizar", description: "Criar soluções inovadoras" },
-        { icon: "fas fa-pencil-alt", title: "Projetar", description: "Criar interfaces centradas no usuário" },
-        { icon: "fas fa-code", title: "Desenvolver", description: "Construir aplicações robustas e escaláveis" },
-        { icon: "fas fa-rocket", title: "Lançar", description: "Implantar e monitorar sua solução" }
+        { icon: "fas fa-lightbulb", title: "Criar soluções sob medida", description: "Transformamos suas ideias em conceitos inovadores que atendem às necessidades únicas do seu negócio." },
+        { icon: "fas fa-pencil-alt", title: "Desenhar experiências intuitivas", description: "Criamos interfaces centradas no usuário que encantam e simplificam a jornada digital." },
+        { icon: "fas fa-code", title: "Construir com agilidade e precisão", description: "Transformamos conceitos em código, entregando aplicações robustas e escaláveis em tempo recorde." },
+        { icon: "fas fa-rocket", title: "Entregar valor continuamente", description: "Implementamos sua solução e a evoluímos constantemente, garantindo resultados imediatos e duradouros." }
     ],
     es: [
-        { icon: "fas fa-lightbulb", title: "Idear", description: "Generar soluciones innovadoras" },
-        { icon: "fas fa-pencil-alt", title: "Diseñar", description: "Crear interfaces centradas en el usuario" },
-        { icon: "fas fa-code", title: "Desarrollar", description: "Construir aplicaciones robustas y escalables" },
-        { icon: "fas fa-rocket", title: "Lanzar", description: "Implementar y monitorear tu solución" }
+        { icon: "fas fa-lightbulb", title: "Crear soluciones a medida", description: "Transformamos sus ideas en conceptos innovadores que satisfacen las necesidades únicas de su negocio." },
+        { icon: "fas fa-pencil-alt", title: "Diseñar experiencias intuitivas", description: "Creamos interfaces centradas en el usuario que encantan y simplifican el viaje digital." },
+        { icon: "fas fa-code", title: "Construir con agilidad y precisión", description: "Transformamos conceptos en código, entregando aplicaciones robustas y escalables en tiempo récord." },
+        { icon: "fas fa-rocket", title: "Entregar valor continuamente", description: "Implementamos su solución y la evolucionamos constantemente, garantizando resultados inmediatos y duraderos." }
     ]
 };
 
@@ -164,6 +164,7 @@ function changeLanguage(lang) {
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
     document.getElementById('header-slogan').textContent = data.slogan;
+    
     document.getElementById('subheadline').textContent = data.subheadline;
     document.getElementById('about-us-title').textContent = data.aboutUsTitle;
     document.getElementById('about-us-content').textContent = data.aboutUsContent;
