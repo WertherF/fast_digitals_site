@@ -7,9 +7,7 @@ const languages = {
         aboutUsTitle: "Who We Are: Your Digital Innovation Team",
         aboutUsContent: "Hello! We are FastDigital, a trio of tech-loving friends turned co-founders with a mission: To transform your ideas into amazing digital solutions, in record time. Our passion? Creating apps that not only make people's lives easier but revolutionize business efficiency. What defines us: • Agility: From concept to launch in weeks, not months. • Customization: Each solution is unique, just like your business. • Innovation: We use cutting-edge technology to solve complex challenges. We're not just developers. We're your innovation partners, turning challenges into digital opportunities. Ready to accelerate your digital journey? Let's create the future together!",
         approachTitle: "Our Approach: The Double Diamond of Agile Innovation",
-        approachDescription: "At FastDigital, we combine strategic thinking and agile execution to transform challenges into digital opportunities. Our approach ensures customized solutions that evolve with your business.",
-        firstDiamondExplanation: "First Stage: From challenge to clear vision: We understand your business and define the path of innovation.",
-        secondDiamondExplanation: "Second Stage: From idea to reality: We develop and deliver agile solutions that generate immediate value.",
+        approachDescription: "At FastDigital, we apply the Double Diamond method in a unique way:\n\n. Exploration and Definition: We dive into your challenge, analyze possibilities, and focus on the most promising solutions, always with your business in mind.\n. Development and Delivery: We create agile prototypes, refine them with your feedback, and accelerate value delivery, ensuring customized solutions that constantly evolve.",
         processTitle: "Our Process: Agile Innovation in Action",
         processIntro: "At FastDigital, each step of our process is an opportunity to innovate and deliver value. We combine agility and customization to transform your ideas into digital solutions that evolve with your business.",
         differentiatorTitle: "Why FastDigital? Your Competitive Advantage",
@@ -30,14 +28,12 @@ const languages = {
         aboutUsTitle: "Quem Somos: Sua Equipe de Inovação Digital",
         aboutUsContent: "Olá! Somos a FastDigital, um trio de amigos apaixonados por tecnologia que se tornaram co-fundadores com uma missão: Transformar suas ideias em soluções digitais incríveis, em tempo recorde. Nossa paixão? Criar apps que não só facilitam a vida das pessoas, mas revolucionam a eficiência das empresas. O que nos define: • Agilidade: Do conceito ao lançamento em semanas, não meses. • Personalização: Cada solução é única, assim como o seu negócio. • Inovação: Usamos tecnologia de ponta para resolver desafios complexos. Não somos apenas desenvolvedores. Somos seus parceiros em inovação, transformando desafios em oportunidades digitais. Prontos para acelerar sua jornada digital? Vamos criar o futuro juntos!",
         approachTitle: "Nossa Abordagem: O Diamante Duplo da Inovação Ágil",
-        approachDescription: "Na FastDigital, combinamos pensamento estratégico e execução ágil para transformar desafios em oportunidades digitais. Nossa abordagem garante soluções personalizadas que evoluem com seu negócio.",
-        firstDiamondExplanation: "Primeira Etapa: Do desafio à visão clara: Entendemos seu negócio e definimos o caminho da inovação.",
-        secondDiamondExplanation: "Segunda Etapa: Da ideia à realidade: Desenvolvemos e entregamos soluções ágeis que geram valor imediato.",
+        approachDescription: "Na FastDigital, aplicamos o método do Diamante Duplo de forma única:\n\n. Exploração e Definição: Mergulhamos no seu desafio, analisamos possibilidades e focamos nas soluções mais promissoras, sempre com seu negócio em mente.\n. Desenvolvimento e Entrega: Criamos protótipos ágeis, refinamos com seu feedback e aceleramos a entrega de valor, garantindo soluções personalizadas que evoluem constantemente.",
         processTitle: "Nosso Processo: Inovação Ágil em Ação",
         processIntro: "Na FastDigital, cada etapa do nosso processo é uma oportunidade de inovar e entregar valor. Combinamos agilidade e personalização para transformar suas ideias em soluções digitais que evoluem com o seu negócio.",
         differentiatorTitle: "Por Que a FastDigital? Sua Vantagem Competitiva",
         theyChooseUsTitle: "Parceiros de Sucesso: Histórias que Inspiram",
-        logoCarouselSubtitle: "Empresas inovadoras que confiam na Fast Digitals",
+        logoCarouselSubtitle:  "Empresas inovadoras que confiam na Fast Digitals",
         ctaTitle: "Pronto para Transformar Seu Negócio?",
         ctaDescription: "Vamos construir sua história de sucesso juntos",
         getStartedBtn: "Receba Sua Solução",
@@ -53,9 +49,7 @@ const languages = {
         aboutUsTitle: "Quiénes Somos: Su Equipo de Innovación Digital",
         aboutUsContent: "¡Hola! Somos FastDigital, un trío de amigos apasionados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante de la Innovación Ágil",
-        approachDescription: "En FastDigital, combinamos pensamiento estratégico y ejecución ágil para transformar desafíos en oportunidades digitales. Nuestro enfoque garantiza soluciones personalizadas que evolucionan con su negocio.",
-        firstDiamondExplanation: "Primera Etapa: Del desafío a la visión clara: Entendemos su negocio y definimos el camino de la innovación.",
-        secondDiamondExplanation: "Segunda Etapa: De la idea a la realidad: Desarrollamos y entregamos soluciones ágiles que generan valor inmediato.",
+        approachDescription: "En FastDigital, aplicamos el método del Doble Diamante de forma única:\n\n. Exploración y Definición: Nos sumergimos en su desafío, analizamos posibilidades y nos enfocamos en las soluciones más prometedoras, siempre con su negocio en mente.\n. Desarrollo y Entrega: Creamos prototipos ágiles, los refinamos con su feedback y aceleramos la entrega de valor, garantizando soluciones personalizadas que evolucionan constantemente.",
         processTitle: "Nuestro Proceso: Innovación Ágil en Acción",
         processIntro: "En FastDigital, cada etapa de nuestro proceso es una oportunidad para innovar y entregar valor. Combinamos agilidad y personalización para transformar sus ideas en soluciones digitales que evolucionan con su negocio.",
         differentiatorTitle: "¿Por Qué FastDigital? Tu Ventaja Competitiva",
@@ -148,7 +142,7 @@ const testimonials = {
     es: [
         {
             text: "Fast Digitals revolucionó nuestro negocio. Su rápida entrega y calidad excepcional nos permitieron lanzar nuestra aplicación meses antes de lo previsto, ganando una ventaja competitiva crucial.",
-            author: "Miguel  Silva, Fundador de TechNova"
+            author: "Miguel Silva, Fundador de TechNova"
         },
         {
             text: "El enfoque personalizado de Fast Digitals marcó la diferencia. No solo entendieron nuestras necesidades únicas, sino que también crearon una solución que se adapta perfectamente a nuestro crecimiento.",
