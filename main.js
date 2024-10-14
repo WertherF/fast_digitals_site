@@ -9,6 +9,7 @@ const languages = {
         approachTitle: "Our Approach: The Double Diamond",
         approachDescription: "Continuous Discovery & Continuous Delivery",
         processTitle: "Our Process: Agile Innovation in Action",
+        processIntro: "At FastDigital, each step of our process is an opportunity to innovate and deliver value. We combine agility and customization to transform your ideas into digital solutions that evolve with your business.",
         differentiatorTitle: "Why Choose Us?",
         theyChooseUsTitle: "Success Partners: Stories that Inspire",
         logoCarouselSubtitle: "Innovative companies that trust Fast Digitals",
@@ -29,6 +30,7 @@ const languages = {
         approachTitle: "Nossa Abordagem: O Diamante Duplo",
         approachDescription: "Descoberta Contínua & Entrega Contínua",
         processTitle: "Nosso Processo: Inovação Ágil em Ação",
+        processIntro: "Na FastDigital, cada etapa do nosso processo é uma oportunidade de inovar e entregar valor. Combinamos agilidade e personalização para transformar suas ideias em soluções digitais que evoluem com o seu negócio.",
         differentiatorTitle: "Por Que Nos Escolher?",
         theyChooseUsTitle: "Parceiros de Sucesso: Histórias que Inspiram",
         logoCarouselSubtitle: "Empresas inovadoras que confiam na Fast Digitals",
@@ -49,6 +51,7 @@ const languages = {
         approachTitle: "Nuestro Enfoque: El Doble Diamante",
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
         processTitle: "Nuestro Proceso: Innovación Ágil en Acción",
+        processIntro: "En FastDigital, cada etapa de nuestro proceso es una oportunidad para innovar y entregar valor. Combinamos agilidad y personalización para transformar sus ideas en soluciones digitales que evolucionan con su negocio.",
         differentiatorTitle: "¿Por Qué Elegirnos?",
         theyChooseUsTitle: "Socios de Éxito: Historias que Inspiran",
         logoCarouselSubtitle: "Empresas innovadoras que confían en Fast Digitals",
@@ -148,6 +151,7 @@ const testimonials = {
         {
             text: "Elegir Fast Digitals fue la mejor decisión que tomamos. Su equipo innovador transformó nuestra idea compleja en una aplicación intuitiva y eficiente, superando todas nuestras expectativas.",
             author: "Carlos Mendes, Director de Tecnología de EcoTech"
+        
         }
     ]
 };
@@ -164,13 +168,13 @@ function changeLanguage(lang) {
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
     document.getElementById('header-slogan').textContent = data.slogan;
-    
     document.getElementById('subheadline').textContent = data.subheadline;
     document.getElementById('about-us-title').textContent = data.aboutUsTitle;
     document.getElementById('about-us-content').textContent = data.aboutUsContent;
     document.getElementById('approach-title').textContent = data.approachTitle;
     document.getElementById('approach-description').textContent = data.approachDescription;
     document.getElementById('process-title').textContent = data.processTitle;
+    document.getElementById('process-intro').textContent = data.processIntro;
     document.getElementById('differentiators-title').textContent = data.differentiatorTitle;
     document.getElementById('they-choose-us-title').textContent = data.theyChooseUsTitle;
     document.getElementById('logo-carousel-subtitle').textContent = data.logoCarouselSubtitle;
