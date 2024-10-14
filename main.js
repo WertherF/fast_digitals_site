@@ -47,7 +47,7 @@ const languages = {
         slogan: "Personal. Rápido. Adaptativo.",
         subheadline: "Transforme Ideas en Realidad: Soluciones Ágiles que Evolucionan con Usted",
         aboutUsTitle: "Quiénes Somos: Su Equipo de Innovación Digital",
-        aboutUsContent: "¡Hola! Somos FastDigital, um trío de amigos apaixonados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
+        aboutUsContent: "¡Hola! Somos FastDigital, un trío de amigos apasionados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante",
         approachDescription: "Descubrimiento Continuo & Entrega Continua",
         processTitle: "Nuestro Proceso: Innovación Ágil en Acción",
@@ -142,7 +142,7 @@ const testimonials = {
     es: [
         {
             text: "Fast Digitals revolucionó nuestro negocio. Su rápida entrega y calidad excepcional nos permitieron lanzar nuestra aplicación meses antes de lo previsto, ganando una ventaja competitiva crucial.",
-            author: "Miguel Silva, Fundador de TechNova"
+            author: "Miguel  Silva, Fundador de TechNova"
         },
         {
             text: "El enfoque personalizado de Fast Digitals marcó la diferencia. No solo entendieron nuestras necesidades únicas, sino que también crearon una solución que se adapta perfectamente a nuestro crecimiento.",
@@ -151,7 +151,6 @@ const testimonials = {
         {
             text: "Elegir Fast Digitals fue la mejor decisión que tomamos. Su equipo innovador transformó nuestra idea compleja en una aplicación intuitiva y eficiente, superando todas nuestras expectativas.",
             author: "Carlos Mendes, Director de Tecnología de EcoTech"
-        
         }
     ]
 };
