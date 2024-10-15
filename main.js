@@ -179,7 +179,6 @@ function changeLanguage(lang) {
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
     document.getElementById('header-slogan').textContent = data.slogan;
-    document.getElementById('footer-slogan').textContent = data.sloganFooter;
     document.getElementById('subheadline').textContent = data.subheadline;
     document.getElementById('about-us-title').textContent = data.aboutUsTitle;
     document.getElementById('about-us-content').textContent = data.aboutUsContent;
@@ -193,12 +192,13 @@ function changeLanguage(lang) {
     document.getElementById('cta-title').textContent = data.ctaTitle;
     document.getElementById('cta-description').textContent = data.ctaDescription;
     document.getElementById('get-started-btn').textContent = data.getStartedBtn;
+    document.getElementById('get-started-btn-footer').textContent = data.getStartedBtnFooter;
     document.getElementById('secondary-cta-btn').textContent = data.getStartedBtn;
     document.getElementById('whatsapp-text').textContent = data.whatsappText;
     document.getElementById('email-text').textContent = data.emailText;
     document.getElementById('secondary-whatsapp-text').textContent = data.whatsappText;
     document.getElementById('secondary-email-text').textContent = data.emailText;
-    document.getElementById('footer-slogan').textContent = data.slogan;
+    document.getElementById('footer-slogan').textContent = data.sloganFooter;
     document.getElementById('additional-text').textContent = data.additionalText;
     document.getElementById('testimonial-cta-btn').textContent = data.testimonialCtaBtn;
     document.getElementById('testimonial-whatsapp-text').textContent = data.whatsappText;
