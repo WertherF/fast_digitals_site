@@ -20,7 +20,7 @@ const languages = {
         emailText: "Send Email",
         additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation.",
         testimonialCtaBtn: "Want to be the next success story? Contact us!",
-        ctaAdditionalText: "At FastDigital, we transform challenges into digital opportunities. Your customized solution is just a click away.",
+        ctaAdditionalText: "At FastDigital, we transform challenges into digital opportunities. Your customized solution is just  a click away.",
         contactOptionsText: "Choose the fastest channel for you:"
     },
     pt: {
@@ -53,7 +53,7 @@ const languages = {
         aboutUsTitle: "Quiénes Somos: Su Equipo de Innovación Digital",
         aboutUsContent: "¡Hola! Somos FastDigital, um trío de amigos apaixonados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante de la Innovación Ágil",
-        approachDescription: "En FastDigital, aplicamos el método del Doble Diamante de forma única:\n\n. Exploración y Definición: Nos sumergimos en su desafío, analizamos posibilidades y nos enfocamos en las soluciones más prometedoras, siempre con su negocio en mente.\n. Desarrollo y Entrega: Creamos prototipos ágeis, los refinamos con su feedback y aceleramos la entrega de valor, garantizando soluciones personalizadas que evolucionan constantemente.",
+        approachDescription: "En FastDigital, aplicamos el método del Doble Diamante de forma única:\n\n. Exploración y Definición: Nos sumergimos en su desafío, analizamos posibilidades y nos enfocamos en las soluciones más prometedoras, siempre con su negocio en mente.\n. Desarrollo y Entrega: Creamos prototipos ágiles, los refinamos con su feedback y aceleramos la entrega de valor, garantizando soluciones personalizadas que evolucionan constantemente.",
         processTitle: "Nuestro Proceso: Innovación Ágil en Acción",
         processIntro: "En FastDigital, cada etapa de nuestro proceso es una oportunidad para innovar y entregar valor. Combinamos agilidad y personalización para transformar sus ideas en soluciones digitales que evolucionan con su negocio.",
         differentiatorTitle: "¿Por Qué FastDigital? Tu Ventaja Competitiva",
@@ -177,7 +177,7 @@ function changeLanguage(lang) {
     document.getElementById('about-us-title').textContent = data.aboutUsTitle;
     document.getElementById('about-us-content').textContent = data.aboutUsContent;
     document.getElementById('approach-title').textContent = data.approachTitle;
-    document.getElementById('approach-description').textContent = data.approachDescription;
+    document.getElementById('approach-description').textContent = data.appro achDescription;
     document.getElementById('process-title').textContent = data.processTitle;
     document.getElementById('process-intro').textContent = data.processIntro;
     document.getElementById('differentiators-title').textContent = data.differentiatorTitle;
