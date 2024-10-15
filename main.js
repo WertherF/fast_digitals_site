@@ -38,13 +38,13 @@ const languages = {
         processIntro: "Na FastDigital, cada etapa do nosso processo é uma oportunidade de inovar e entregar valor. Combinamos agilidade e personalização para transformar suas ideias em soluções digitais que evoluem com o seu negócio.",
         differentiatorTitle: "Por Que a FastDigital? Sua Vantagem Competitiva",
         theyChooseUsTitle: "Parceiros de Sucesso: Histórias que Inspiram",
-        logoCarouselSubtitle:  "Empresas inovadoras que confiam na Fast Digitals",
+        logoCarouselSubtitle: "Empresas inovadoras que confiam na Fast Digitals",
         ctaTitle: "Pronto para Acelerar sua Transformação Digital?",
         ctaDescription: "Vamos criar sua história de inovação juntos, em tempo recorde",
         getStartedBtn: "Acelere Seu Projeto Digital",
         getStartedBtnFooter: "Obtenha Sua Solução Personalizada",
         whatsappText: "WhatsApp",
-        emailText:  "Enviar E-mail",
+        emailText: "Enviar E-mail",
         additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital.",
         testimonialCtaBtn: "Quer ser o próximo caso de sucesso? Fale conosco!",
         ctaAdditionalText: "Na FastDigital, transformamos desafios em oportunidades digitais. Sua solução personalizada está a apenas um clique de distância.",
@@ -124,45 +124,55 @@ const reasons = {
 // Testimonials data
 const testimonials = {
     en: [
+        
         {
             text: "Fast Digitals revolutionized our business. Their rapid delivery and exceptional quality allowed us to launch our app months ahead of schedule, gaining a crucial competitive advantage.",
-            author: "Michael Silva, Founder of TechNova"
+            author: "Michael Silva",
+            company: "Founder of TechNova"
         },
         {
             text: "Fast Digitals' personalized approach made all the difference. They not only understood our unique needs but also created a solution that perfectly adapts to our growth.",
-            author: "Anna Rodriguez, CEO of Inova Health"
+            author: "Anna Rodriguez",
+            company: "CEO of Inova Health"
         },
         {
             text: "Choosing Fast Digitals was the best decision we made. Their innovative team transformed our complex idea into an intuitive and efficient app, exceeding all our expectations.",
-            author: "Charles Mendes, CTO of EcoTech"
+            author: "Charles Mendes",
+            company: "CTO of EcoTech"
         }
     ],
     pt: [
         {
             text: "A Fast Digitals revolucionou nosso negócio. Sua entrega rápida e qualidade excepcional nos permitiram lançar nosso app meses antes do previsto, ganhando uma vantagem competitiva crucial.",
-            author: "Miguel Silva, Fundador da TechNova"
+            author: "Miguel Silva",
+            company: "Fundador da TechNova"
         },
         {
             text: "A abordagem personalizada da Fast Digitals fez toda a diferença. Eles não apenas entenderam nossas necessidades únicas, mas também criaram uma solução que se adapta perfeitamente ao nosso crescimento.",
-            author: "Ana Rodrigues, CEO da Inova Saúde"
+            author: "Ana Rodrigues",
+            company: "CEO da Inova Saúde"
         },
         {
             text: "Escolher a Fast Digitals foi a melhor decisão que tomamos. Sua equipe inovadora transformou nossa ideia complexa em um app intuitivo e eficiente, superando todas as nossas expectativas.",
-            author: "Carlos Mendes, Diretor de Tecnologia da EcoTech"
+            author: "Carlos Mendes",
+            company: "Diretor de Tecnologia da EcoTech"
         }
     ],
     es: [
         {
             text: "Fast Digitals revolucionó nuestro negocio. Su rápida entrega y calidad excepcional nos permitieron lanzar nuestra aplicación meses antes de lo previsto, ganando una ventaja competitiva crucial.",
-            author: "Miguel Silva, Fundador de TechNova"
+            author: "Miguel Silva",
+            company: "Fundador de TechNova"
         },
         {
             text: "El enfoque personalizado de Fast Digitals marcó la diferencia. No solo entendieron nuestras necesidades únicas, sino que también crearon una solución que se adapta perfectamente a nuestro crecimiento.",
-            author: "Ana Rodrigues, CEO de Inova Salud"
+            author: "Ana Rodrigues",
+            company: "CEO de Inova Salud"
         },
         {
             text: "Elegir Fast Digitals fue la mejor decisión que tomamos. Su equipo innovador transformó nuestra idea compleja en una aplicación intuitiva y eficiente, superando todas nuestras expectativas.",
-            author: "Carlos Mendes, Director de Tecnología de EcoTech"
+            author: "Carlos Mendes",
+            company: "Director de Tecnología de EcoTech"
         }
     ]
 };
@@ -170,7 +180,7 @@ const testimonials = {
 // Initialize the page
 function initPage() {
     changeLanguage('pt');
-    initTestimonialCarousel();
+    renderTestimonials('pt');
 }
 
 // Change language
@@ -244,11 +254,11 @@ function renderTestimonials(lang) {
     const testimonialContainer = document.querySelector('.testimonial-carousel');
     testimonialContainer.innerHTML = testimonials[lang].map(testimonial => `
         <div class="testimonial-slide">
-            <p>"${testimonial.text}"</p>
-            <p class="author">- ${testimonial.author}</p>
+            <p class="testimonial-content">"${testimonial.text}"</p>
+            <p class="testimonial-author">${testimonial.author}</p>
+            <p class="testimonial-company">${testimonial.company}</p>
         </div>
     `).join('');
-    initTestimonialCarousel();
 }
 
 // Toggle reason details
@@ -279,26 +289,6 @@ function toggleContactOptions(section) {
         if (additionalText) additionalText.style.display = 'none';
         btn.classList.remove('disabled');
     }
-}
-
-// Initialize testimonial carousel
-function initTestimonialCarousel() {
-    const slides = document.querySelectorAll('.testimonial-slide');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-
-    showSlide(currentSlide);
-    setInterval(nextSlide, 5000); // Change slide every 5 seconds
 }
 
 // Initialize the page when the DOM is loaded
