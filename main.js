@@ -192,8 +192,7 @@ function changeLanguage(lang) {
     document.getElementById('cta-title').textContent = data.ctaTitle;
     document.getElementById('cta-description').textContent = data.ctaDescription;
     document.getElementById('get-started-btn').textContent = data.getStartedBtn;
-    document.getElementById('get-started-btn-footer').textContent = data.getStartedBtnFooter;
-    document.getElementById('secondary-cta-btn').textContent = data.getStartedBtn;
+    document.getElementById('secondary-cta-btn').textContent = data.getStartedBtnFooter;
     document.getElementById('whatsapp-text').textContent = data.whatsappText;
     document.getElementById('email-text').textContent = data.emailText;
     document.getElementById('secondary-whatsapp-text').textContent = data.whatsappText;
