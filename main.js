@@ -2,7 +2,7 @@
 const languages = {
     en: {
         headline: "Boost Your Innovation with Tailor-Made Apps in Record Time",
-        slogan: "Personal. Fast. Adaptive.",
+        slogan: "Tailored digital innovation, delivered at the speed of your business",
         subheadline: "Transform Ideas into Reality: Agile Solutions that Evolve with You",
         aboutUsTitle: "Who We Are: Your Digital Innovation Team",
         aboutUsContent: "Hello! We are FastDigital, a trio of tech-loving friends turned co-founders with a mission: To transform your ideas into amazing digital solutions, in record time. Our passion? Creating apps that not only make people's lives easier but revolutionize business efficiency. What defines us: • Agility: From concept to launch in weeks, not months. • Customization: Each solution is unique, just like your business. • Innovation: We use cutting-edge technology to solve complex challenges. We're not just developers. We're your innovation partners, turning challenges into digital opportunities. Ready to accelerate your digital journey? Let's create the future together!",
@@ -13,17 +13,19 @@ const languages = {
         differentiatorTitle: "Why FastDigital? Your Competitive Advantage",
         theyChooseUsTitle: "Success Partners: Stories that Inspire",
         logoCarouselSubtitle: "Innovative companies that trust Fast Digitals",
-        ctaTitle: "Ready to Transform Your Business?",
-        ctaDescription: "Let's build your success story together",
-        getStartedBtn: "Get Your Solution",
+        ctaTitle: "Ready to Accelerate Your Digital Transformation?",
+        ctaDescription: "Let's create your innovation story together, in record time",
+        getStartedBtn: "Get Your Customized Solution",
         whatsappText: "WhatsApp",
         emailText: "Send Email",
         additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation.",
-        testimonialCtaBtn: "Want to be the next success story? Contact us!"
+        testimonialCtaBtn: "Want to be the next success story? Contact us!",
+        ctaAdditionalText: "At FastDigital, we transform challenges into digital opportunities. Your customized solution is just a click away.",
+        contactOptionsText: "Choose the fastest channel for you:"
     },
     pt: {
         headline: "Impulsione Sua Inovação com Apps Sob Medida em Tempo Recorde",
-        slogan: "Personalizado. Ágil. Flexível.",
+        slogan: "Inovação digital sob medida, entregue na velocidade do seu negócio",
         subheadline: "Transforme Ideias em Realidade: Soluções Ágeis que Evoluem com Você",
         aboutUsTitle: "Quem Somos: Sua Equipe de Inovação Digital",
         aboutUsContent: "Olá! Somos a FastDigital, um trio de amigos apaixonados por tecnologia que se tornaram co-fundadores com uma missão: Transformar suas ideias em soluções digitais incríveis, em tempo recorde. Nossa paixão? Criar apps que não só facilitam a vida das pessoas, mas revolucionam a eficiência das empresas. O que nos define: • Agilidade: Do conceito ao lançamento em semanas, não meses. • Personalização: Cada solução é única, assim como o seu negócio. • Inovação: Usamos tecnologia de ponta para resolver desafios complexos. Não somos apenas desenvolvedores. Somos seus parceiros em inovação, transformando desafios em oportunidades digitais. Prontos para acelerar sua jornada digital? Vamos criar o futuro juntos!",
@@ -34,34 +36,38 @@ const languages = {
         differentiatorTitle: "Por Que a FastDigital? Sua Vantagem Competitiva",
         theyChooseUsTitle: "Parceiros de Sucesso: Histórias que Inspiram",
         logoCarouselSubtitle:  "Empresas inovadoras que confiam na Fast Digitals",
-        ctaTitle: "Pronto para Transformar Seu Negócio?",
-        ctaDescription: "Vamos construir sua história de sucesso juntos",
-        getStartedBtn: "Receba Sua Solução",
+        ctaTitle: "Pronto para Acelerar sua Transformação Digital?",
+        ctaDescription: "Vamos criar sua história de inovação juntos, em tempo recorde",
+        getStartedBtn: "Obtenha Sua Solução Personalizada",
         whatsappText: "WhatsApp",
         emailText: "Enviar E-mail",
         additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital.",
-        testimonialCtaBtn: "Quer ser o próximo caso de sucesso? Fale conosco!"
+        testimonialCtaBtn: "Quer ser o próximo caso de sucesso? Fale conosco!",
+        ctaAdditionalText: "Na FastDigital, transformamos desafios em oportunidades digitais. Sua solução personalizada está a apenas um clique de distância.",
+        contactOptionsText: "Escolha o canal mais ágil para você:"
     },
     es: {
         headline: "Impulse Su Innovación con Apps a Medida en Tiempo Récord",
-        slogan: "Personal. Rápido. Adaptativo.",
+        slogan: "Innovación digital a medida, entregada a la velocidad de tu negocio",
         subheadline: "Transforme Ideas en Realidad: Soluciones Ágiles que Evolucionan con Usted",
         aboutUsTitle: "Quiénes Somos: Su Equipo de Innovación Digital",
-        aboutUsContent: "¡Hola! Somos FastDigital, un trío de amigos apasionados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
+        aboutUsContent: "¡Hola! Somos FastDigital, um trío de amigos apaixonados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante de la Innovación Ágil",
-        approachDescription: "En FastDigital, aplicamos el método del Doble Diamante de forma única:\n\n. Exploración y Definición: Nos sumergimos en su desafío, analizamos posibilidades y nos enfocamos en las soluciones más prometedoras, siempre con su negocio en mente.\n. Desarrollo y Entrega: Creamos prototipos ágiles, los refinamos con su feedback y aceleramos la entrega de valor, garantizando soluciones personalizadas que evolucionan constantemente.",
+        approachDescription: "En FastDigital, aplicamos el método del Doble Diamante de forma única:\n\n. Exploración y Definición: Nos sumergimos en su desafío, analizamos posibilidades y nos enfocamos en las soluciones más prometedoras, siempre con su negocio en mente.\n. Desarrollo y Entrega: Creamos prototipos ágeis, los refinamos con su feedback y aceleramos la entrega de valor, garantizando soluciones personalizadas que evolucionan constantemente.",
         processTitle: "Nuestro Proceso: Innovación Ágil en Acción",
         processIntro: "En FastDigital, cada etapa de nuestro proceso es una oportunidad para innovar y entregar valor. Combinamos agilidad y personalización para transformar sus ideas en soluciones digitales que evolucionan con su negocio.",
         differentiatorTitle: "¿Por Qué FastDigital? Tu Ventaja Competitiva",
         theyChooseUsTitle: "Socios de Éxito: Historias que Inspiran",
         logoCarouselSubtitle: "Empresas innovadoras que confían en Fast Digitals",
-        ctaTitle: "¿Listo para Transformar Tu Negocio?",
-        ctaDescription: "Construyamos juntos tu historia de éxito",
-        getStartedBtn: "Obtenga Su Solución",
+        ctaTitle: "¿Listo para Acelerar tu Transformación Digital?",
+        ctaDescription: "Creemos juntos tu historia de innovación en tiempo récord",
+        getStartedBtn: "Obtén Tu Solución Personalizada",
         whatsappText: "WhatsApp",
         emailText: "Enviar Correo",
         additionalText: "Desde el concepto hasta el lanzamiento en semanas, no meses. Vea cómo podemos acelerar su transformación digital.",
-        testimonialCtaBtn: "¿Quieres ser el próximo caso de éxito? ¡Contáctanos!"
+        testimonialCtaBtn: "¿Quieres ser el próximo caso de éxito? ¡Contáctanos!",
+        ctaAdditionalText: "En FastDigital, transformamos desafíos en oportunidades digitales. Tu solución personalizada está a solo un clic de distancia.",
+        contactOptionsText: "Elige el canal más ágil para ti:"
     }
 };
 
@@ -190,6 +196,8 @@ function changeLanguage(lang) {
     document.getElementById('testimonial-cta-btn').textContent = data.testimonialCtaBtn;
     document.getElementById('testimonial-whatsapp-text').textContent = data.whatsappText;
     document.getElementById('testimonial-email-text').textContent = data.emailText;
+    document.getElementById('cta-additional-text').textContent = data.ctaAdditionalText;
+    document.getElementById('contact-options-text').textContent = data.contactOptionsText;
 
     renderProcessSteps(lang);
     renderReasons(lang);
@@ -251,14 +259,18 @@ function toggleProcess(element) {
 function toggleContactOptions(section) {
     const btnId = section === 'primary' ? 'get-started-btn' : (section === 'secondary' ? 'secondary-cta-btn' : 'testimonial-cta-btn');
     const optionsId = section === 'primary' ? 'contact-options' : (section === 'secondary' ? 'secondary-contact-options' : 'testimonial-contact-options');
+    const additionalTextId = section === 'secondary' ? 'cta-additional-text' : null;
     const btn = document.getElementById(btnId);
     const options = document.getElementById(optionsId);
+    const additionalText = additionalTextId ? document.getElementById(additionalTextId) : null;
 
     if (options.style.display === 'none') {
         options.style.display = 'flex';
+        if (additionalText) additionalText.style.display = 'block';
         btn.classList.add('disabled');
     } else {
         options.style.display = 'none';
+        if (additionalText) additionalText.style.display = 'none';
         btn.classList.remove('disabled');
     }
 }
