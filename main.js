@@ -179,6 +179,7 @@ function changeLanguage(lang) {
     const data = languages[lang];
     document.getElementById('headline').textContent = data.headline;
     document.getElementById('header-slogan').textContent = data.slogan;
+    document.getElementById('footer-slogan').textContent = data.sloganFooter;
     document.getElementById('subheadline').textContent = data.subheadline;
     document.getElementById('about-us-title').textContent = data.aboutUsTitle;
     document.getElementById('about-us-content').textContent = data.aboutUsContent;
