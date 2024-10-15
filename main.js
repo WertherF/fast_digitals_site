@@ -22,7 +22,7 @@ const languages = {
         emailText: "Send Email",
         additionalText: "From concept to launch in weeks, not months. See how we can accelerate your digital transformation.",
         testimonialCtaBtn: "Want to be the next success story? Contact us!",
-        ctaAdditionalText: "At FastDigital, we transform challenges into digital opportunities. Your customized solution is just  a click away.",
+        ctaAdditionalText: "At FastDigital, we transform challenges into digital opportunities. Your customized solution is just a click away.",
         contactOptionsText: "Choose the fastest channel for you:"
     },
     pt: {
@@ -44,7 +44,7 @@ const languages = {
         getStartedBtn: "Acelere Seu Projeto Digital",
         getStartedBtnFooter: "Obtenha Sua Solução Personalizada",
         whatsappText: "WhatsApp",
-        emailText: "Enviar E-mail",
+        emailText:  "Enviar E-mail",
         additionalText: "Desde o conceito até o lançamento em semanas, não meses. Veja como podemos acelerar sua transformação digital.",
         testimonialCtaBtn: "Quer ser o próximo caso de sucesso? Fale conosco!",
         ctaAdditionalText: "Na FastDigital, transformamos desafios em oportunidades digitais. Sua solução personalizada está a apenas um clique de distância.",
@@ -56,7 +56,7 @@ const languages = {
         sloganFooter: "Innovación digital a medida, entregada a la velocidad de tu negocio",
         subheadline: "Transforme Ideas en Realidad: Soluciones Ágiles que Evolucionan con Usted",
         aboutUsTitle: "Quiénes Somos: Su Equipo de Innovación Digital",
-        aboutUsContent: "¡Hola! Somos FastDigital, um trío de amigos apaixonados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
+        aboutUsContent: "¡Hola! Somos FastDigital, un trío de amigos apasionados por la tecnología que se convirtieron en cofundadores con una misión: Transformar sus ideas en increíbles soluciones digitales en tiempo récord. ¿Nuestra pasión? Crear aplicaciones que no solo faciliten la vida de las personas, sino que revolucionen la eficiencia de las empresas. Lo que nos define: • Agilidad: Del concepto al lanzamiento en semanas, no meses. • Personalización: Cada solución es única, como su negocio. • Innovación: Utilizamos tecnología de vanguardia para resolver desafíos complejos. No somos solo desarrolladores. Somos sus socios en innovación, transformando desafíos en oportunidades digitales. ¿Listos para acelerar su viaje digital? ¡Creemos el futuro juntos!",
         approachTitle: "Nuestro Enfoque: El Doble Diamante de la Innovación Ágil",
         approachDescription: "En FastDigital, aplicamos el método del Doble Diamante de forma única:\n\n. Exploración y Definición: Nos sumergimos en su desafío, analizamos posibilidades y nos enfocamos en las soluciones más prometedoras, siempre con su negocio en mente.\n. Desarrollo y Entrega: Creamos prototipos ágiles, los refinamos con su feedback y aceleramos la entrega de valor, garantizando soluciones personalizadas que evolucionan constantemente.",
         processTitle: "Nuestro Proceso: Innovación Ágil en Acción",
@@ -183,7 +183,7 @@ function changeLanguage(lang) {
     document.getElementById('about-us-title').textContent = data.aboutUsTitle;
     document.getElementById('about-us-content').textContent = data.aboutUsContent;
     document.getElementById('approach-title').textContent = data.approachTitle;
-    document.getElementById('approach-description').textContent = data.appro achDescription;
+    document.getElementById('approach-description').textContent = data.approachDescription;
     document.getElementById('process-title').textContent = data.processTitle;
     document.getElementById('process-intro').textContent = data.processIntro;
     document.getElementById('differentiators-title').textContent = data.differentiatorTitle;
