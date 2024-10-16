@@ -95,7 +95,7 @@ const processSteps = {
         { icon: "fas fa-lightbulb", title: "Crear soluciones a medida", description: "Transformamos sus ideas en conceptos innovadores que satisfacen las necesidades únicas de su negocio." },
         { icon: "fas fa-pencil-alt", title: "Diseñar experiencias intuitivas", description: "Creamos interfaces centradas en el usuario que encantan y simplifican el viaje digital." },
         { icon: "fas fa-code", title: "Construir con agilidad y precisión", description: "Transformamos conceptos en código, entregando aplicaciones robustas y escalables en tiempo récord." },
-        { icon: "fas fa-rocket", title: "Entregar valor continuamente", description: "Implementamos su solución y la evolucionamos constantemente, garantizando resultados inmediatos y duraderos." }
+        { icon: "fas fa-rocket", title: "Entregar valor continuamente", description: "Implementamos su solución y la evolucionamos constantemente, garant izando resultados inmediatos y duraderos." }
     ]
 };
 
@@ -124,7 +124,6 @@ const reasons = {
 // Testimonials data
 const testimonials = {
     en: [
-        
         {
             text: "Fast Digitals revolutionized our business. Their rapid delivery and exceptional quality allowed us to launch our app months ahead of schedule, gaining a crucial competitive advantage.",
             author: "Michael Silva",
@@ -180,7 +179,7 @@ const testimonials = {
 // Initialize the page
 function initPage() {
     changeLanguage('pt');
-    renderTestimonials('pt');
+    initTestimonialCarousel();
 }
 
 // Change language
@@ -252,8 +251,8 @@ function renderReasons(lang) {
 // Render testimonials
 function renderTestimonials(lang) {
     const testimonialContainer = document.querySelector('.testimonial-carousel');
-    testimonialContainer.innerHTML = testimonials[lang].map(testimonial => `
-        <div class="testimonial-slide">
+    testimonialContainer.innerHTML = testimonials[lang].map((testimonial, index) => `
+        <div class="testimonial-slide ${index === 0 ? 'active' : ''}">
             <p class="testimonial-content">"${testimonial.text}"</p>
             <p class="testimonial-author">${testimonial.author}</p>
             <p class="testimonial-company">${testimonial.company}</p>
@@ -289,6 +288,26 @@ function toggleContactOptions(section) {
         if (additionalText) additionalText.style.display = 'none';
         btn.classList.remove('disabled');
     }
+}
+
+// Initialize testimonial carousel
+function initTestimonialCarousel() {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
 }
 
 // Initialize the page when the DOM is loaded
