@@ -257,7 +257,7 @@ h2 {
     max-width: 800px;
     margin: 2rem auto;
     overflow: hidden;
-    height: 250px; /* Set a fixed height */
+    height: 300px; /* Increased height to accommodate content */
 }
 
 .testimonial-slide {
@@ -271,10 +271,11 @@ h2 {
     left: 0;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    height: 100%; /* Ensure full height */
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
 }
 
 .testimonial-slide.active {
@@ -286,17 +287,22 @@ h2 {
     font-style: italic;
     margin-bottom: 1rem;
     color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    max-height: 150px; /* Limit the height of the content */
 }
 
 .testimonial-author {
     font-weight: bold;
     color: var(--accent-color);
     margin-bottom: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .testimonial-company {
     color: var(--secondary-color);
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 footer {
@@ -352,5 +358,14 @@ footer {
     .header-slogan {
         margin-left: 0;
         margin-top: 0.5rem;
+    }
+
+    .testimonial-carousel {
+        height: 350px; /* Increased height for mobile devices */
+    }
+
+    .testimonial-content {
+        font-size: 0.9rem;
+        max-height: 180px; /* Increased max-height for mobile devices */
     }
 }
