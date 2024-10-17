@@ -266,6 +266,10 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.testimonial-cta {
+    text-align: center;
+}
+
 .testimonial-carousel {
     position: relative;
     max-width: 800px;
