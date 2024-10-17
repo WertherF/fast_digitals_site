@@ -172,6 +172,10 @@ h2 {
     font-size: 1.2rem;
 }
 
+.cta {
+    text-align: center;
+}
+
 .additional-text {
     margin-top: 1rem;
     font-size: 0.9rem;
