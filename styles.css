@@ -108,7 +108,7 @@ h2 {
     padding: 4rem 0;
 }
 
-.about-us {
+/* .about-us {
     background-color: var(--gray-background);
     padding: 0;
     margin: 0 auto;
@@ -119,7 +119,7 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-}
+} */
 
 .cta-button {
     background: var(--accent-color);
