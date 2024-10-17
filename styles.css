@@ -110,7 +110,7 @@ h2 {
 
 .about-us {
     background-color: var(--gray-background);
-    padding: 0 2rem;
+    padding: 0;
     margin: 0 auto;
     max-width: 1200px;
 }
