@@ -105,7 +105,12 @@ h2 {
     background-color: var(--gray-background);
     padding: 4rem 0;
     margin: 4rem 0;
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .about-us-content {
