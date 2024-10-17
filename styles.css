@@ -101,16 +101,18 @@ h2 {
     padding: 6rem 2rem;
 }
 
+.full-width-bg {
+    background-color: var(--gray-background);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 4rem 0;
+}
+
 .about-us {
     background-color: var(--gray-background);
-    padding: 4rem 0;
-    margin: 4rem 0;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .about-us-content {
