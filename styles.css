@@ -139,7 +139,7 @@ h2 {
 
 .cta-button.disabled {
     background: #666;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 .contact-options {
