@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +27,7 @@
         <section class="hero">
             <h1 id="headline">Boost Your Innovation with Tailor-Made Apps in Record Time</h1>
             <p id="subheadline">Transform Ideas into Reality: Agile Solutions that Evolve with You</p>
-            <button id="get-started-btn" class="cta-button" onclick="toggleContactOptions('primary')">Accelerate Your Digital Project</button>
+            <button id="get-started-btn" class="cta-button" onclick="toggleContactOptions('primary')">Acelere Seu Projeto Digital</button>
             <p id="additional-text" class="additional-text">From concept to launch in weeks, not months. See how we can accelerate your digital transformation.</p>
             <div id="contact-options" class="contact-options" style="display: none;">
                 <a href="https://wa.me/5521980343553?text=Preciso%20de%20um%20app" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp-btn">
@@ -41,16 +42,81 @@
         <section class="about-us">
             <div class="about-us-content">
                 <h2 id="about-us-title">Quem Somos: Sua Equipe de Inovação Digital</h2>
-                <div id="about-us-content"></div>
+                <p id="about-us-content"></p>
             </div>
         </section>
 
-        <!-- Other sections remain unchanged -->
+        <section class="differentiators">
+            <h2 id="differentiators-title">Por Que a FastDigital? Sua Vantagem Competitiva</h2>
+            <div id="reasons" class="reasons"></div>
+        </section>
 
+        <section class="they-choose-us">
+            <h2 id="they-choose-us-title">Parceiros de Sucesso: Histórias que Inspiram</h2>
+            <div class="logo-carousel">
+                <div class="logo-slide">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CDVet-aBHqVDuv8Aewy16u88ZO6QeBYZTBCH.webp" alt="CDVet">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LASO-KPE5wg0PFxptucBoSFfRIKe61QwaEC.png" alt="LASO">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/APCP%20Path-AaN4s7Ph0o2EzwrDZx4Bkpk9G7KmLJ.webp" alt="APCP Path">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MAS%20Diagn%C3%B3stico-DZUFWj8iQ3mQhIJJ7vEyboqEZ1Iixv.png" alt="MAS Diagnóstico">
+                </div>
+            </div>
+            <p id="logo-carousel-subtitle" class="logo-carousel-subtitle">Empresas inovadoras que confiam na Fast Digitals</p>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-carousel">
+        <!-- Your testimonial slides go here -->
+                </div>
+            </div>   
+            <!-- New CTA button below testimonials -->
+            <div class="testimonial-cta">
+                <button id="testimonial-cta-btn" class="cta-button" onclick="toggleContactOptions('testimonial')">Quer ser o próximo caso de sucesso? Fale conosco!</button>
+                <div id="testimonial-contact-options" class="contact-options" style="display: none;">
+                    <a href="https://wa.me/5521980343553?text=Preciso%20de%20um%20app" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> <span id="testimonial-whatsapp-text">WhatsApp</span>
+                    </a>
+                    <a href="mailto:fidalgo.werther@gmail.com" class="contact-btn email-btn">
+                        <i class="fas fa-envelope"></i> <span id="testimonial-email-text">Send Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <h2 id="process-title">Nosso Processo: Inovação Ágil em Ação</h2>
+            <p id="process-intro" class="process-intro">Na FastDigital, cada etapa do nosso processo é uma oportunidade de inovar e entregar valor. Combinamos agilidade e personalização para transformar suas ideias em soluções digitais que evoluem com o seu negócio.</p>
+            <div id="process-steps" class="process-steps">
+                <!-- Process steps will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section class="approach">
+            <h2 id="approach-title">Nossa Abordagem: O Diamante Duplo da Inovação Ágil</h2>
+            <p id="approach-description">Na FastDigital, aplicamos o método do Diamante Duplo de forma única:
+
+. Exploração e Definição: Mergulhamos no seu desafio, analisamos possibilidades e focamos nas soluções mais promissoras, sempre com seu negócio em mente.
+. Desenvolvimento e Entrega: Criamos protótipos ágeis, refinamos com seu feedback e aceleramos a entrega de valor, garantindo soluções personalizadas que evoluem constantemente.</p>
+            <img src="https://media.licdn.com/dms/image/C4E12AQGGqTYB9qE2Uw/article-cover_image-shrink_600_2000/0/1612039476184?e=2147483647&v=beta&t=Nqyh6kt6uxtBCFJS3oZbbZPD4CXFaiGAzWPKMdOmzAE" alt="Double Diamond Approach" class="double-diamond-img">
+        </section>
+
+        <section class="cta">
+            <h2 id="cta-title">Pronto para Acelerar sua Transformação Digital?</h2>
+            <p id="cta-description">Vamos criar sua história de inovação juntos, em tempo recorde</p>
+            <button id="secondary-cta-btn" class="cta-button" onclick="toggleContactOptions('secondary')">Obtenha Sua Solução Personalizada</button>
+            <p id="cta-additional-text" class="additional-text" style="display: none;">Na FastDigital, transformamos desafios em oportunidades digitais. Sua solução personalizada está a apenas um clique de distância.</p>
+            <div id="secondary-contact-options" class="contact-options" style="display: none;">
+                <p id="contact-options-text">Escolha o canal mais ágil para você:</p>
+                <a href="https://wa.me/5521980343553?text=Preciso%20de%20um%20app" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> <span id="secondary-whatsapp-text">WhatsApp</span>
+                </a>
+                <a href="mailto:fidalgo.werther@gmail.com" class="contact-btn email-btn">
+                    <i class="fas fa-envelope"></i> <span id="secondary-email-text">Send Email</span>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p id="footer-slogan">Tailored digital innovation, delivered at the speed of your business.</p>
+        <p id="footer-slogan">Inovação digital sob medida, entregue na velocidade do seu negócio</p>
         <p>&copy; 2024 FastDigitals. All rights reserved.</p>
     </footer>
 
