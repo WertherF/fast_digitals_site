@@ -177,6 +177,10 @@ h2 {
     justify-content: center;
 }
 
+.cta-title {
+    background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
+}
+
 .additional-text {
     margin-top: 1rem;
     font-size: 0.9rem;
