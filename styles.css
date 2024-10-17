@@ -114,6 +114,10 @@ h2 {
     padding: 0 2rem;
 }
 
+#about-us-content {
+    white-space: pre-line;
+}
+
 .cta-button {
     background: var(--accent-color);
     color: var(--background-color);
@@ -174,145 +178,6 @@ h2 {
     margin-right: auto;
 }
 
-.double-diamond-img {
-    max-width: 100%;
-    height: auto;
-    margin: 2rem 0;
-}
-
-.process-steps, .reasons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.process-step, .reason-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.process-step:hover, .reason-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
-}
-
-.process-step i, .reason-icon {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
-
-.reason-details, .process-details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.reason-item.expanded .reason-details,
-.process-step.expanded .process-details {
-    max-height: 200px;
-    margin-top: 1rem;
-}
-
-.they-choose-us {
-    text-align: center;
-    padding: 4rem 0;
-    margin: 4rem 0;
-}
-
-.logo-carousel {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 2rem 0;
-    padding: 0 2rem;
-}
-
-.logo-slide {
-    display: inline-block;
-    animation: slide 20s linear infinite;
-}
-
-.logo-slide img {
-    height: 80px;
-    margin: 0 3rem;
-    vertical-align: middle;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.testimonial-wrapper {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-}
-
-.testimonial-carousel {
-    position: relative;
-    max-width: 800px;
-    margin: 2rem auto;
-    overflow: visible;
-    height: auto;
-    min-height: 300px;
-}
-
-.testimonial-slide {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 255, 255, 0.1);
-    padding: 2rem;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    height: auto;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.testimonial-slide.active {
-    opacity: 1;
-    z-index: 1;
-}
-
-.testimonial-content {
-    font-style: italic;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-    font-size: 1rem;
-    line-height: 1.6;
-    overflow: visible;
-    max-height: none;
-}
-
-.testimonial-author {
-    font-weight: bold;
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-}
-
-.testimonial-company {
-    color: var(--secondary-color);
-    font-size: 0.9em;
-}
-
 footer {
     text-align: center;
     padding: 2rem;
@@ -351,11 +216,6 @@ footer {
 
     .contact-options {
         flex-direction: column;
-    }
-
-    .logo-slide img {
-        height: 60px;
-        margin: 0 2rem;
     }
 
     .logo-container {
